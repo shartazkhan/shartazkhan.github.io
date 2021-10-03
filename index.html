@@ -4,104 +4,141 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <ink href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <title>Shartaz Khan akash</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.0/examples/navbar-fixed/"
+    />
+    <title>Document</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
   </head>
   <body>
+    <!--- Navbar -->
 
-    <!-- Nav bar-->
-    <nav class="navbar navbar-expand-lg bg-lite navbar-lite text-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img src="Image/Sig.png" alt="" class="img-fluid w-50 d-sm-block"></a>
-        
-        <button 
-        class="navbar-toggler" 
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#navmanue" 
+    <nav
+      class="navbar navbar-expand-md navbar-light fixed-top bg-light shadow-sm"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="image/Sig.png" alt="" class="img-fluid w-50 d-sm-block ps-lg-5 ms-lg-5" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-      </button>
-
-        <div class="collapse navbar-collapse" id="navmanue">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a herf="#learn" class="nav-link text-dark"  href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a herf="#learn" class="nav-link text-dark" href="#education">Education</a>
+              <a class="nav-link" href="#education">Education</a>
             </li>
             <li class="nav-item">
-              <a herf="#learn" class="nav-link text-dark" href="index.html">Resume</a>
+              <a class="nav-link" href="#">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kichu ekta</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    
-    <!-- End Nav bar-->
 
-    <!-- Home -->
+    <!--- Home -->
 
-    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+    <section class="bg-light text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
       <div class="container">
         <div class="d-sm-flex">
           <div class="container">
-            <img src="Image/1.png" alt="shartaz" class="img-fluid w-50 d-sm-block">
+            <img src="image/DT2-01.png" alt="shartaz" class="img-responsive w-50 d-sm-block">
           </div>
-          <div class="container"> 
-            <h1 class="display-6">Hello, </h1>
-            <h1 class="display-4">  I'm  <span class="text-danger">Shartaz Khan Akash</span> </h1>
-            <p class="lead"> 
+          <div class="container pt-lg-5"> 
+            <h1 class="display-6 mt-3 fontchangesmall text-secondary">Hello, </h1>
+            <h1 class="display-1 fontchange text-secondary ">I'm  <span class="text-dark">Shartaz Khan Akash</span> </h1>
+            <p class="fontchange2small"> 
               A tech enthusiast who has a firm interest in Robotics, Machine Learning, and Image Processing.
             </p>
-            <buttoun class="btn btn-danger btn-lg">Resume</buttoun>
+           
           </div>
          
         </div>
       </div>
     </section>
-
-    <!-- End Home-->
-
-    <div class="bg-dark text-light p-5 pt-lg-5"></div>
-
-     <!-- Info -->
-     <section class="bg-lite text-danger p-5">
-      <div class="container">
+  
+    <!--- contact -->
+    <section class="bg-white text-warning p-5 pt-lg-5">
+      <div class="container pt-lg-3">
         
-       
         <div class="container">
-          <div class="row d-flex justify-content-center">
-            <div class="col d-flex justify-content-center">
+          
+          <div class="row d-flex justify-content-center  px-lg-5 mx-lg-5">
+            <div class="col d-flex justify-content-end">
                <!-- Email -->
-               <a class="btn btn-primary" style="background-color: #333333;" href="mailto:akashshartazkhan@gmail.com" role="button"
+               <a class="btn btn-secondary " style="background-color: #333333;" href="mailto:akashshartazkhan@gmail.com" role="button"
                ><i class="fab fa-email"></i
                ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                 <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
               </svg></a>
             </div>
-            <div class="col d-flex justify-content-center">
-               <!-- Phone -->
-               <a class="btn btn-primary" style="background-color: #333333;" href="tel:+8801787336084" role="button"
-               ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-              </svg><i class="fab fa-phone"></i
-               ></a>
-            </div>
+            
             <div class="col d-flex justify-content-center">
                <!-- Github -->
-               <a class="btn btn-primary" style="background-color: #333333;" href="https://github.com/shartazkhan" role="button"
+               <a class="btn btn-secondary" style="background-color: #333333;" href="https://github.com/shartazkhan" role="button"
                ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
               </svg><i class="fab fa-github"></i
                ></a>
               
             </div>
-            <div class="col d-flex justify-content-center">
+            <div class="col d-flex justify-content-start">
               <!-- Linkedin -->
-              <a class="btn btn-primary" style="background-color: #333333;" href="https://www.linkedin.com/in/shartaz-khan/" role="button"
+              <a class="btn btn-secondary" style="background-color: #333333;" href="https://www.linkedin.com/in/shartaz-khan/" role="button"
               ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
                 <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
               </svg><i class="fab fa-linkedin"></i
@@ -112,53 +149,56 @@
         </div>
 
       </div>
+     
     </section>
+    <hr class="bg-danger border border-bottom-3 border-dark">
 
-     <!-- Education-->
-     <section class="resume-section bg-dark text-light p-5 pt-lg-5" id="education">
+    <!--- Education -->
+    <section class="resume-section bg-white text-dark p-5 pt-lg-5" id="education">
       <div class="container">
-          <h2 class="mb-5"><span class="text-danger"> Education</span></h2>
-          <hr class="bg-danger border-3 border-top border-danger">
+          <h1 class="mb-3"><span class="text-warning"> Education</span></h1>
+          
+          <hr class="bg-danger border-3 border-top border-dark">
           <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
               <div class="flex-grow-1">
-                  <h3 class="mb-0">American International University-Bangladesh</h3>
+                  <h4 class="mb-0">American International University-Bangladesh</h4>
                   <div class="subheading mb-3">Bachelor of Science</div>
                   <div>Computer Engineering </div>
                   <p>GPA: #.##</p>
               </div>
-              <div class="flex-shrink-0"><span class="text-danger">August 2006 - May 2010</span></div>
+              <div class="flex-shrink-0"><span class="text-dark">August 2006 - May 2010</span></div>
           </div>
 
-          <hr class="bg-danger border-4 border-top border-danger">
+          <hr class="bg-danger border-3 border-top border-dark">
 
           <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="flex-grow-1">
-                <h3 class="mb-0">Dhaka Imperial Collage</h3>
+                <h4 class="mb-0">Dhaka Imperial Collage</h4>
                 <div class="subheading mb-3">Science</div>
                 <div>HSC</div>
                 
             </div>
-            <div class="flex-shrink-0"><span class="text-danger">August 2006 - May 2010</span></div>
+            <div class="flex-shrink-0"><span class="text-dark">August 2006 - May 2010</span></div>
         </div>
 
-        <hr class="bg-danger border-4 border-top border-danger">
+        <hr class="bg-danger border-3 border-top border-dark">
 
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="flex-grow-1">
-              <h3 class="mb-0">Motijheel Model School</h3>
+              <h4 class="mb-0">Motijheel Model School</h4>
               <div class="subheading mb-3">Science</div>
               <div>SSC</div>
               
           </div>
-          <div class="flex-shrink-0"><span class="text-danger">August 2006 - May 2010</span></div>
+          <div class="flex-shrink-0"><span class="text-dark">August 2006 - May 2010</span></div>
       </div>
           
       </div>
-  </section>
-  <hr class="m-0" />
+    </section>
+  
 
-       <!-- skills -->
-       <section class="bg-danger text-light p-5">
+    <!-- skills -->
+       <section class="bg-warning text-light p-5">
         <div class="container">
           <div class="d-md-flex justify-content-between align-items-center">
             <h3 class="mb-3 mb-md-0">Contact</h3>
@@ -169,20 +209,31 @@
   
         </div>
       </section>
-  
 
-    <!-- SCripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.js"></script>
+
+
+
+    <!--Script-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.js"
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+
+    <!--Script end-->
   </body>
 </html>
