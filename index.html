@@ -1,446 +1,320 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-    />
-
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.0/examples/navbar-fixed/"
-    />
-
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <title>Shartaz khan akash</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shartaz Khan Akash</title>
+    <!-- Bootstrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- FW -->
-     <!-- Font Awesome CSS -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Special+Elite&display=swap" rel="stylesheet">
+    <!-- Favicon  -->
+    <link rel="icon" type="image/png" href="image/Sig.png"/>
+    <link rel="icon" type="image/png" href="https://example.com/favicon.png"/>
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <!--- Navbar -->
+</head>
+<body >
 
-    <nav
-      class="navbar navbar-expand-md navbar-light fixed-top bg-light shadow-sm"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="image/Sig.png"
-            alt=""
-            class="img-fluid w-50 d-sm-block ps-lg-5 ms-lg-5"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#education">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experiences">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-          </ul>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <div class="container-xxl">
+            <a href="#about" class="navbar-brand">
+                <span class="fw-bold text-scondary ms-lg-5 ps-lg-5">
+                  <img src="res/Sig.png" alt="" width="180" height="65">
+                </span>
+            </a>
+            <!--Toggler-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#main-nav"aria-controls="main-nav"  aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+
+        <!--Navbar links-->
+        <div class="collapse navbar-collapse justify-content-center align-center ms-lg-5 ps-lg-5" id="main-nav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">ABOUT ME</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#EXPERIENCE" class="nav-link">EXPERIENCE</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#EDUCATION" class="nav-link">EDUCATION</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#EXTRACURRICULAR" class="nav-link">EXTRACURRICULAR</a>
+                </li>
+            </ul>
+               
         </div>
-      </div>
     </nav>
-
-    <!--- Home -->
-    <section
-      class="bg-light text-dark p-5 p-lg-0 pt-lg-5 mt-lg-3  text-center text-sm-start"
-    >
-      <div class="container">
-        <div class="d-sm-flex">
-          <div class="container">
-            <img
-              src="image/DT2-01.png"
-              alt="shartaz"
-              class="img-responsive rounded w-50 d-sm-block"
-            />
-          </div>
-          <div class="container pt-lg-5 ">
-            <h1 class="display-6 mt-3 text-secondary">
-              Hello,
-            </h1>
-            <h1 class="display-4  text-secondary">
-              I'm <span class="text-dark">Shartaz Khan Akash</span>
-            </h1>
-            <p class="">
-              A tech enthusiast who has a firm interest in Robotics, Machine
-              Learning, and Image Processing.
-            </p>
-          </div>
+    <br>
+    <br>
+    <!--Section One-->
+    <section id="about">
+        <div class="container-lg my-5 border rounded-3 border-dark mt-2 mb-2 mt-5">
+            <div class="row m-2">
+                <div class="col-lg-4 col-sm-12">
+                    <img src="res/web_01-02.png" class="img-fluid"  alt="">
+                  
+                </div>
+                <div class="col pt-lg-4 mt-lg-4 text-center">
+                    <h2 class="mt-3 fw-bold ">Shartaz Khan Akash</h2>
+                    <p class="">I am a young professional intending to continue my development as an engineer. I think about results and objectives; I am enthusiastic and work with decisiveness and conviction. I am proactive and find positive ways to stimulate and engage with people. </p>
+                    <p class="">Programming in <strong>Python</strong>  and <strong>Machine Learning </strong>  are my strengths. I'm currently developing my computer vision and machine learning skills.</p>
+                    <div class="col ps-lg-4 ms-lg-4 d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-outline-dark  btn-lg m-3"> <i class="bi bi-linkedin"></i> </button>
+                        <button type="button" class="btn btn-outline-dark  btn-lg m-3"> <i class="bi bi-github"></i> </button>
+                        <button type="button" class="btn btn-outline-dark  btn-lg m-3"> <i class="bi bi-behance"></i> </button>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!--- contact -->
-    <section class="bg-light text-warning p-5 pt-lg-5">
-      
-      <div class="container pt-lg-3">
-        <div class="container">
-          <div class="row d-flex justify-content-center px-lg-5 mx-lg-5">
-            <div class="col d-flex justify-content-end">
-              <!-- Email -->
-              <a
-                class="btn btn-outline-dark"
-                
-                href="mailto:akashshartazkhan@gmail.com"
-                role="button"
-                ></i
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-envelope-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
-                  />
-                </svg>
-              </a>
-            </div>
-
-            <div class="col d-flex justify-content-center">
-              <!-- Github -->
-              <a
-                class="btn btn-outline-dark"
-              
-                href="https://github.com/shartazkhan"
-                role="button"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-github"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                  />
-                </svg>
-                
-              </a>
-            </div>
-
-            <div class="col d-flex justify-content-start">
-              <!-- Linkedin -->
-              <a
-                class="btn btn-outline-dark"
-                
-                href="https://www.linkedin.com/in/shartaz-khan-akash/"
-                role="button"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-linkedin"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                  />
-                </svg>
-                </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="border border-bottom-2 border-dark" />
-
-    <!--- Education -->
-    <section
-      class="education-section bg-white text-dark p-5 pt-lg-5"
-      id="education"
-    >
-      <div class="container">
-        <h1 class="display-6 mb-3 bg-dark ps-lg-3 ">
-          <span class="text-warning "> Education</span>
-        </h1>
-
-        <div class="border-top border-top border-2 border-dark mb-lg-3 "></div>
-        <div
-          class="d-flex flex-column flex-md-row justify-content-between mb-5"
-        >
-          <div class="flex-grow-1 ps-lg-3 ">
-            <h4 class="mb-0 ">Bachelor of Science</h4>
-            <div class="subheading mb-3 ">
-              American International University-Bangladesh
-            </div>
-            <div class="lead">Computer Engineering (CoE)</div>
-          </div>
-          <div class="flex-shrink-0">
-            <span class="text-dark "
-              >Summer 2018 - Summer 2022</span
-            >
-          </div>
-        </div>
-
-        <div class="border-top border-top border-2 border-dark mb-lg-3"></div>
-
-        <div
-          class="d-flex flex-column flex-md-row justify-content-between mb-5"
-        >
-          <div class="flex-grow-1 ps-lg-3">
-            <h4 class="mb-0 ">Higher Secondary Certificate</h4>
-            <div class="subheading mb-3 ">
-              Dhaka Imperial Collage
-            </div>
-            <div class="lead ">Dhaka Board (Science)</div>
-          </div>
-          <div class="flex-shrink-0">
-            <span class="text-dark ">2015-2017</span>
-          </div>
-        </div>
-
-        <div class="border-top border-top border-2 border-dark mb-lg-3"></div>
-
-        <div
-          class="d-flex flex-column flex-md-row justify-content-between mb-5"
-        >
-          <div class="flex-grow-1 ps-lg-3">
-            <h4 class="mb-0 ">Secondary School Certificate</h4>
-            <div class="subheading mb-3 ">
-              Motijheel Model School
-            </div>
-            <div class="lead ">Dhaka Board (Science)</div>
-          </div>
-          <div class="flex-shrink-0">
-            <span class="text-dark ">2015</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experiences -->
-    <section
-      class="experiences-section bg-dark text-light p-5 pt-lg-5"
-      id="experiences"
-    >
-      <div class="container-lg my-5 ">
-        <h5 class="display-6 mb-3 bg-warning ps-lg-3">
-          <span class="text-dark "> Experiences </span>
-        </h5>
-
-        <div class="row text-light mt-lg-5 mt-md-5 g-2">
-
-          <div class="col-md-4 flex-grow-1 ms-lg-5 border-start border-warning col-sm-12 col-sm-offset-2">
-            <h5 class="mb-0 text-warning">Vice-Chair</h5>
-            <div class="subheading mb-3 ">
-              IEEE AIUB Student Branch
-            </div>
-            <div class="lead ">2021-2022</div>
-          </div>
-
-          <div class="col-md-4 flex-grow-1 ms-lg-5 border-start border-warning col-sm-12 col-sm-offset-2">
-            <h5 class="mb-0  text-warning">Graphic Designer</h5>
-            <div class="subheading mb-3 ">
-              IEEE Region 10 Young Profassionals
-            </div>
-            <div class="lead ">2021-2022</div>
-          </div>
-        </div>
-
-        <div class="row text-light mt-lg-5  align-items-center g-2">
-          <div class="col-md-4 flex-grow-1 ms-lg-5 border-start border-warning col-sm-12 col-sm-offset-2">
-            <h5 class="mb-0  text-warning">Creative Designer</h5>
-            <div class="subheading mb-3 ">
-              IEEE AIUB Student Branch
-            </div>
-            <div class="lead ">2020-2021</div>
-          </div>
-
-          <div class="col-md-4 flex-grow-1 ms-lg-5 border-start border-warning col-sm-12 col-sm-offset-2">
-            <h5 class="mb-0  text-warning">Volunteer</h5>
-            <div class="subheading mb-3 ">
-              Media & Publicity Team, IEEE Region 10 SAC
-            </div>
-            <div class="lead ">2020-2021</div>
-          </div>
-        </div>
-
-        <div class="row text-light mt-lg-5  align-items-center g-2">
-          <div class="col-md-4 flex-grow-1 ms-lg-5 border-start border-warning col-sm-12  col-sm-offset-2">
-            <h5 class="mb-0  text-warning">Volunteer</h5>
-            <div class="subheading mb-3 ">
-              IEEE AIUB Student Branch
-            </div>
-            <div class="lead ">2019-2020</div>
-          </div>
-
-          
-        </div>
-
-        
-    </section>
-
-
-     <!-- Skills  -->
-     <section
-     class="skills-section bg-light text-dark p-5 pt-lg-5"
-     id="skills"
-   >
-     <div class="container-lg my-5">
-
-      <h5 class="display-6 mb-3 border-dark border-top border-bottom border-2 ps-lg-3 text-center ">
-        <span class="text-dark "> Skills</span>
-      </h5>
-      
-     </div>
-
-     <div class="container-lg my-5 border border-2 border-dark p-3 p-lg-4 bg-white">
-      <h4 class="mb-lg-3 mb-md-2 border-bottom border-dark">Programming Languages</h4>
-
-       <h5 class="pt-4 ">Python</h5>
-       <div class="progress">
-        <div class="progress-bar progress-bar-striped bg-dark w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-
-      <h5 class="pt-4 ">C# .NET</h5>
-      <div class="progress">
-       <div class="progress-bar progress-bar-striped bg-dark w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-     </div>
-
-     </div>
-
-     
-
-     <div class="container-lg my-5 border border-2 border-dark p-3 p-lg-4 bg-white">
-      <h4 class="mb-lg-3 mb-md-2 border-bottom border-dark">Office Tools</h4>
-
-       <h5 class="pt-4 ">Ms Word</h5>
-       <div class="progress">
-        <div class="progress-bar progress-bar-striped bg-dark w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-
-      <h5 class="pt-4 ">Ms PowerPoint</h5>
-      <div class="progress">
-       <div class="progress-bar progress-bar-striped bg-dark w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-     </div>
-
-     <h5 class="pt-4 ">Ms Excel</h5>
-     <div class="progress">
-      <div class="progress-bar progress-bar-striped bg-dark w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-
-     </div>
-
-
-
-     <div class="container-lg my-5 border border-2 border-dark p-3 p-lg-4 bg-white">
-      <h4 class="mb-lg-3 mb-md-2 border-bottom border-dark">Graphic Design Software’s</h4>
-
-       <h5 class="pt-4 ">Aodbe Illustrator</h5>
-       <div class="progress">
-        <div class="progress-bar progress-bar-striped bg-dark w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-
-      <h5 class="pt-4 ">Adobe Photoshop</h5>
-      <div class="progress">
-       <div class="progress-bar progress-bar-striped bg-dark w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-     </div>
-
-     <h5 class="pt-4 ">Adobe InDesign</h5>
-     <div class="progress">
-      <div class="progress-bar progress-bar-striped bg-dark w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-
-    <h5 class="pt-4 ">Adobe XD</h5>
-    <div class="progress">
-     <div class="progress-bar progress-bar-striped bg-dark w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-   </div>
-
-     </div>
-
-
-
-     
-
+    <br>
+    <!--Section Two-->
+    <section id="EXPERIENCE">
        
-   </section>
 
-    <!--Script-->
+        <div class="container-lg my-5 border rounded-3 border-dark"  >
+            <br>
+            <h3 class="fw-bold ps-1">WORK EXPERIENCE</h3>
+            <hr>
+            <br>
+            <div class="row ">
+                <section class="ps-4">
+                    <ul class="timeline">
+                      <li class="timeline-item mb-5">
+                        <h5 class="fw-bold">Research Assistant</h5> 
+                        <p class="text-muted mb-2 "><strong> Anawarul Abedin Institute of Innovation</strong>   (2022 - 2023) </p>
+                        
+                        <p class="text-muted">
+                          Worked on a TRP project for BSCL under the supervision of the Dr. Anawarul Abedin Institute of Innovation. I worked on projects related to machine learning and computer vision.
+                          and also different hardware related projects.
+                        </p>
+                      </li>
+                  
+                      <li class="timeline-item mb-5">
+                        <h5 class="fw-bold">Research and Development Intern</h5>
+                        <p class="text-muted mb-2 "><strong> Anawarul Abedin Institute of Innovation</strong>   (2022) </p>
+                        <p class="text-muted">
+                          Completed a 3-month internship at the Anawarul Abedin Institute of Innovation. I worked on prjects related to machine learning and computer vision.
+                        </p>
+                      </li>
+                  
+                      <li class="timeline-item mb-5">
+                        <h5 class="fw-bold">Graphic Designer & Digital Media Analyst</h5>
+                        <p class="text-muted mb-2 fw-bold">Semiotify</p>
+                        <p class="text-muted">
+                          Worked as a graphic designer and digital media analyst at Semiotify. I have created their branding and marketing materials.
+                        </p>
+                      </li>
+                  
+                      
+                    </ul>
+            </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/custom.js"></script>
+        </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
+    </section>
 
-    <!--Script end-->
-  </body>
+    <br>
+    <!--Section Three-->
+    <section id="EDUCATION" >
+       
+
+        <div class="container-lg my-5 border rounded-3 border-dark "  >
+            <br>
+            <h3 class="fw-bold ps-1">EDUCATION</h3>
+            <hr>
+            <br>
+            <div class="row ">
+                <section class="ps-4">
+                    <ul class="timeline">
+                      <li class="timeline-item mb-5">
+                        <h5 class="fw-bold">Bachelors of Science in Computer Engineering</h5>
+                        <p class="text-muted mb-2 fw-bold">American International University-Bangladesh</p>
+                        
+                        <p class="text-muted">
+                          I have completed my Bachelors of Science in Computer Engineering from American International University-Bangladesh. 
+                        </p>
+                        
+                        <button type="button" class="btn btn-outline-secondary" onclick="document.location='https://www.aiub.edu/faculties/engg/programs/bsc-in-coe'">Curriculum</button>
+                      </dev>
+                      </li>                     
+                    </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+    <br>
+    <!--Section Four-->
+    <section id="SKILLS">
+        <div class="container-lg my-5 border rounded-3 border-dark ">
+            <br>
+            <h3 class="fw-bold ps-1">SKILLS</h3>
+            <hr>
+            <br>
+
+            <div class="row gx-lg-5">
+                <div class="col-lg-6 mb-5">
+                  <div class="d-flex align-items-start">
+                    <div class="flex-shrink-0">
+                      <div class="p-3 badge-primary rounded-4">
+                        <img src = "res/Python-logo-notext.svg" alt="python" width="50" height="50"/>
+                      </div>
+                    </div>
+                    <div class="flex-grow-1 ms-4">
+                      <p class="fw-bold mb-1">Python</p>
+                      <p class="text-muted mb-1">
+                        Worked on a lot of projects using Python. I have a good understanding of Python. 
+                      </p>
+                      
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="col-lg-6 mb-5">
+                  <div class="d-flex align-items-start">
+                    <div class="flex-shrink-0">
+                      <div class="p-3 badge-primary rounded-4">
+                        <img src = "res/Tensorflow_logo.svg" alt="python" width="50" height="50"/>
+                      </div>
+                    </div>
+                    <div class="flex-grow-1 ms-4">
+                      <p class="fw-bold mb-1">Tensoeflow</p>
+                      <p class="text-muted mb-1">
+                        Worked on different ML projects using Tensorflow.
+                      </p>
+                      
+                      
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="col-lg-6 mb-5">
+                  <div class="d-flex align-items-start">
+                    <div class="flex-shrink-0">
+                      <div class="p-3 badge-primary rounded-4">
+                        <img src = "res/Microsoft_Office_logo_(2019–present).svg" alt="python" width="50" height="50"/>
+                      </div>
+                    </div>
+                    <div class="flex-grow-1 ms-4">
+                      <p class="fw-bold mb-1">MS Office</p>
+                      <p class="text-muted mb-1">
+                        Used MS Office for a long time. I have a good understanding of MS Office. Specially, I have a good understanding of MS Word, MS Excel and MS PowerPoint.
+                      </p>
+                      
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="col-lg-6 mb-5">
+                  <div class="d-flex align-items-start">
+                    <div class="flex-shrink-0">
+                      <div class="p-3 badge-primary rounded-4">
+                        <img src = "res/NET_Core_Logo.svg" alt="python" width="50" height="50"/>
+                      </div>
+                    </div>
+                    <div class="flex-grow-1 ms-4">
+                      <p class="fw-bold mb-1">C# ASP .NET</p>
+                      <p class="text-muted mb-1">
+                        Worked on Desktop and Web applications using C# ASP .NET for academic courses.
+                      </p>
+                     
+                    </div>
+                  </div>
+                </div>
+            
+              </div>
+
+            <br>
+
+        </div>
+    </section>
+
+    <br>
+    <!--Section Five-->
+    <section id="EXTRACURRICULAR">
+        <div class="container-lg my-5 border rounded-3 border-dark ">
+            <br>
+            
+            <h3 class="fw-bold ps-1">VOLUNTEERING EXPERIENCE</h3>
+            <hr>
+            <br>
+            <div class="row ">
+              <section class="ps-4">
+                  <ul class="timeline">
+                    <li class="timeline-item mb-5">
+                      
+                      <h5 class="fw-bold">Vice Chairperson</h5>
+                      <p class="text-muted mb-2 fw-bold">  IEEE AIUB Student Branch ( 31 May 2021 – 7 Aug 2022 )</p>
+                      <p class="text-muted">
+                        I served IEEE AIUB Student Branch as Vice Chairperson. I was responsible for organizing events and workshops and also responsible for the overall management of the branch.
+                      </p>
+                      <button type="button" class="btn btn-outline-secondary" onclick="document.location='https://ieeeaiubsb.com/'" target="_blank" rel="noopener noreferrer">Visit</button>
+
+                    </li>
+                    <li class="timeline-item mb-5" >
+                      <h5 class="fw-bold">Graphic Designer</h5>
+                      <p class="text-muted mb-2 fw-bold">  IEEE Region 10 Young Professionals ( 24 Jan 2021 – 1 May 2022 )</p>
+                      <p class="text-muted">
+                        I served IEEE AIUB Student Branch as Vice Chairperson. I was responsible for organizing events and workshops and also responsible for the overall management of the branch.
+                      </p>
+                      <button type="button" class="btn btn-outline-secondary" onclick="document.location='https://sparklers.yp.ieeer10.org/committee/'" target="_blank" rel="noopener noreferrer">Visit</button>
+
+
+                    </li>                     
+                  </ul>
+          </div>
+
+            
+
+            
+    </section>
+
+    
+
+    <br>
+    <!--Section Footer-->
+    <section class="">
+      <!-- Footer -->
+      <footer class="text-center text-white" style="background-color: #0a4275;">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: CTA -->
+          <section class="">
+            <p class="d-flex justify-content-center align-items-center">
+              © 2020 Copyright : Shartaz Khan Aksh 
+            </p>
+          </section>
+          <!-- Section: CTA -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center  p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+         shartazkhan@ieee.org
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Special+Elite&display=swap'); </style>
+    
+</body>
 </html>
