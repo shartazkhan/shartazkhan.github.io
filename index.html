@@ -13,17 +13,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Special+Elite&display=swap" rel="stylesheet">
     <!-- Favicon  -->
-    <link rel="icon" type="image/png" href="image/Sig.png"/>
-    <link rel="icon" type="image/png" href="https://example.com/favicon.png"/>
+    <link rel="icon" type="image/png" href="res/fc.png"/>
+    
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
 </head>
-<body >
+<!-- Main Body -->
+<!-- Background Color: #FCF2E5 -->
+<body style="background-color:#ffffff;" >
 
     <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top " style="background-color:#f1f1f1;">
         <div class="container-xxl">
             <a href="#about" class="navbar-brand">
                 <span class="fw-bold text-scondary ms-lg-5 ps-lg-5">
@@ -254,12 +256,12 @@
             
             <h3 class="fw-bold ps-1">PUBLICATIONS</h3>
             <hr>
-            <br>
+            
             <div class="row ">
               <section class="ps-4">
-                  <ul class="timeline">
-                    <li class="timeline-item mb-5">
-                      <div class="row g-0 bg-light position-relative">
+                  <ul class="">
+                    <li class=" m-5">
+                      <div class="row g-0 bg-dark text-light position-relative rounded-3 border-dark">
                         <div class="col-md-6 mb-md-0 p-md-4">
                           <img src="res/Paper1.png" class="w-100"  width="30" height="400" alt="paper1">
                         </div>
@@ -274,14 +276,15 @@
                         </div>
                       </div>
                     </li>
-                    <li class="timeline-item mb-5" >
-                      <div class="row g-0 bg-light position-relative">
+                    <li class="m-5" >
+                      <div class="row g-0 bg-dark text-light position-relative rounded-3 border-dark">
                         <div class="col-md-6 mb-md-0 p-md-4">
                           <img src="res/paper2.png" class="w-100" alt="paper2">
                         </div>
                         <div class="col-md-6 p-4 ps-md-0">
                           <h5 class="mt-0 fw-bold">Deep Learning-Based Prediction of Football Players’ Performance During Penalty Shootout</h5>
                           <p class="text-muted mb-2 fw-bold">  AIUB Journal of Science and Engineering (AJSE) [Under Review] </p>
+                          <br>
                           <p class="text-muted">
                             A deep learning-based prediction model is proposed in this paper to predict the performance of football players during penalty shootouts. The model is trained on player performance data to identify patterns and relationships that influence their performance. The performance data is processed using deep learning algorithms to generate predictions about player performance during penalty shootouts. The results indicate that the deep learning-based prediction model is effective in accurately predicting the performance of football players in penalty shootouts.                          </p>
                           <a href="paper2.html" class="stretched-link"></a>
@@ -339,7 +342,7 @@
           
   </section>
   <br>
-    <!-- Section Six-->
+    <!-- Section Seven-->
 
      <section id="test" >
        
@@ -350,15 +353,23 @@
           <hr>
           <br>
           <div class="row ">
-              <div class="col-4">
+              <div class="col-lg-4  col-sm-12">
                
               </div>
-              <div class="col-4">
+              <div class="col-lg-4  col-sm-12 d-flex justify-content-center align-items-center">
                 <img src="res/gg.gif" alt="">
               </div>
-              <div class="col-4">
+              <div class="col-lg-4 col-sm-12">
               
               </div>
+          </div>
+          <div class="row pt-3">
+           
+            <div class="col">
+              <p style="text-align:center">This website was built using Bootstrap 5, a powerful front-end framework for creating responsive and dynamic web designs. As a learner, I have been continuously improving and modifying this website as I learn new features and techniques of Bootstrap 5. From designing layouts to adding interactive components, I have utilized the latest features of Bootstrap 5 to create a visually appealing and user-friendly website. I am passionate about learning and improving my skills, and I will continue to update this website as I learn more. Thank you for visiting my website.</p>
+
+            </div>
+            
           </div>
           <br>
           
@@ -367,6 +378,49 @@
 
       </div>
 
+  </section>
+
+  <!--Section Comments-->
+  <section>
+    <div class="container-lg my-5 border rounded-3 border-dark ">
+      <br>
+          
+          <h3 class="fw-bold ps-1">FEEDBACK</h3>
+          <hr>
+          <br>
+      <div class="row">
+        <div class="col d-flex justify-content-center align-items-center">
+          <form class="gform" method="POST" data-email="skakashhh@gmail.com" action="https://script.google.com/macros/s/AKfycbzoRi0HSHOSwYBBbfKS_GRlVro0uL6PelFoXfETe4VJRqYqAtwsBEu2V144D2LP7hXdZg/exec">
+            
+            <!-- Customise the Thankyou Message People See when they submit the form: -->
+            <div class="thankyou_message" style="display:none;">
+              <div class="alert alert-warning" role="alert">
+                  Thank you for reaching out!
+              </div>
+            </div>
+            
+            <div class="mb-3">
+              <label for="name" class="form-label"></label>
+              <input type="name" class="form-control" id="name" name="name" placeholder="Name">
+              
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label"></label>
+              <input type="email" name="email"  class="form-control" id="email" placeholder="Email">
+              
+            </div>
+            <div class="mb-3">
+              <label for="message" class="message"></label>
+              <textarea class="form-control" id="message" rows="3" name="message" placeholder="Your Message"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-dark">Submit</button>
+            
+          </form>
+        </div>
+      </div>
+      
+    </div>
   </section>
   
 
@@ -380,7 +434,7 @@
           <!-- Section: CTA -->
           <section class="">
             <p class="d-flex justify-content-center align-items-center">
-              © 2020 Copyright : Shartaz Khan Aksh 
+              © 2023 Copyright : Shartaz Khan Aksh 
             </p>
           </section>
           <!-- Section: CTA -->
@@ -400,5 +454,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Special+Elite&display=swap'); </style>
     
+
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
 </body>
 </html>
