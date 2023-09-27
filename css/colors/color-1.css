@@ -54,7 +54,7 @@ a:focus,
 .page--breadcrumb .breadcrumb li.active,
 .portfolio--filter-menu .nav > li:hover,
 .portfolio--filter-menu .nav > li.active {
-    color: #82345A;
+    color: #ff305b;
 }
 
 /*------------------------------------*\
@@ -83,15 +83,15 @@ a:focus,
 .post--img .date:before,
 .footer--social .nav > li > a:hover,
 .cs--content .social .nav > li > a:hover {
-    background-color: #82345A;
+    background-color: #ff305b;
 }
 
 ::-moz-selection {
-    background-color: #82345A;
+    background-color: #ff305b;
 }
 
 ::selection {
-    background-color: #82345A;
+    background-color: #ff305b;
 }
 
 /*------------------------------------*\
@@ -143,9 +143,9 @@ a:focus,
 .contact--info-block .icon:before,
 .banner--content .name .h2,
 .cs--content .social .nav > li > a:hover {
-    border-color: #82345A;
+    border-color: #ff305b;
 }
 
 .cs--content .title .h2:after {
-    border-bottom-color: #82345A;
+    border-bottom-color: #ff305b;
 }
