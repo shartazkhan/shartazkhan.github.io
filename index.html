@@ -1,1284 +1,229 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en">
-<head>
+<!doctype html>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- ==== Document Title ==== -->
+     <title>Shartaz Khan Akash</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+     <!-- ==== Document Meta ==== -->
+     <meta name="author" content="shartaz-khan-akash">
+     <meta name="description" content="">
+     <meta name="keywords" content="shartaz khan akash">
 
-    <!-- ==== Document Title ==== -->
-    <title>Shartaz Khan Akash</title>
-    
-    <!-- ==== Document Meta ==== -->
-    <meta name="author" content="shartaz-khan-akash">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css"> 
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- ==== Favicon ==== -->
-    <link rel="icon" href="favicon.png" type="image/png">
+     <!-- <link rel="icon" href="favicon.png" type="image/png"> -->
 
-    <!-- ==== Google Font ==== -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CRoboto+Condensed:300,400,700">
-    
-    <!-- ==== Plugins Bundle ==== -->
-    <link rel="stylesheet" href="css/plugins.min.css">
-    
-    <!-- ==== Main Stylesheet ==== -->
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- ==== Responsive Stylesheet ==== -->
-    <link rel="stylesheet" href="css/responsive-style.css">
-    
-    <!-- ==== Color Scheme Stylesheet ==== -->
-    <link rel="stylesheet" href="css/colors/color-1.css" id="changeColorScheme">
-    
-    <!-- ==== Custom Stylesheet ==== -->
-    <link rel="stylesheet" href="css/custom.css">
+     <!-- ==== Google Font ==== -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <!-- ==== HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries ==== -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body data-spy="scroll" data-target="#headerNav" data-offset="100">
+      <!-- ==== Font Awesome ==== -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/custom.css" >
 
-    <!-- Preloader Start -->
-<!--     <div id="preloader" class="bg-primary">
-        <div class="preloader--spinner"></div>
-    </div> -->
-    <!-- Preloader End -->
-
-    <!-- Wrapper Start -->
-    <div class="wrapper">
-        <!-- Header Section Start -->
-        <header id="header" class="header--section">
-            <!-- Header Navbar Start -->
-            <nav class="header--navbar navbar">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#headerNav">
-                            <span class="sr-only">Toggle Navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-
-                        <!-- Logo Start -->
-                        <a href="index.html" class="navbar-brand">
-                            <span class="vc--parent">
-                                <span class="vc--child">
-                                    <img src="img/logo.png" alt="">
-                                </span>
-                            </span>
-                        </a>
-                        <!-- Logo End -->
-                    </div>
-
-                    <div id="headerNav" class="navbar-collapse collapse">
-                        <!-- Header Nav Links Start -->
-                        <ul class="header--nav-links ff--primary nav navbar-right">
-                            <li class="active"><a href="#header" data-trigger="scroll">Home</a></li>
-                        <li><a href="#aboutme" data-trigger="scroll">About Me</a></li>
-                        <li><a href="#education" data-trigger="scroll">Education</a></li>
-                        <li><a href="#experience" data-trigger="scroll">Experience</a></li>
-                        <li><a href="#skills" data-trigger="scroll">Skills</a></li>
-                        <li><a href="#achivments" data-trigger="scroll">Achivments</a></li>
-                        <li><a href="#publication" data-trigger="scroll">Publication</a></li>
-                            <!-- <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<span class="caret"></span></a>
-
-                                <ul class="dropdown-menu">
-                                    <li><a href="index.html">Home Page</a></li>
-                                    <li><a href="blog.html">Blog Page</a></li>
-                                    <li><a href="blog-details.html">Blog Details Page</a></li>
-                                    <li><a href="contact.html">Contact Page</a></li>
-                                    <li><a href="404.html">404 Page</a></li>
-                                    <li><a href="coming-soon.html">Coming Soon Page</a></li>
-                                </ul>
-                            </li> -->
-                        </ul>
-                        <!-- Header Nav Links End -->
-                    </div>
-                </div>
-            </nav>
-            <!-- Header Navbar End -->
-        </header>
-        <!-- Header Section End -->
-
-        <!-- Banner Section Start -->
-        <section id="banner" class="banner--section" data-bg-parallax="img/banner-img/personal.jpg" data-overlay="0.8">
-            <div class="vc--parent">
-                <div class="vc--child">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2">
-                                <!-- Banner Content Start -->
-                                <div class="banner--content text-center pt--160 pb--100">
-                                    <div class="title text-uppercase">
-                                        <h2 class="h3 text-white"><span class="text-primary">Hello</span> I'm</h2>
-                                    </div>
-    
-                                    <div class="name text-uppercase">
-                                        <h3 class="h2 text-white">Shartaz Khan Akash</h3>
-                                    </div>
-    
-                                    <div class="role fs--18 fw--700 text-white">
-                                        <p>Engineer / Tech Enthusiast / Designer</p>
-                                    </div>
-    
-                                    <div class="desc">
-                                        <p>My strengths are Machine Learning, Python and Graphic Design.</p>
-                                    </div>
-    
-                                    <div class="action">
-                                        <!-- <a href="#" class="btn btn-default">Hire Me</a> -->
-                                        <!-- <a href="#" class="btn btn-white">My Works</a> -->
-                                    </div>
-                                </div>
-                                <!-- Banner Content End -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+     <!-- Favicon -->
+    <link rel="icon" type="image/png" href="src/favicon.png">
+  </head>
+  <body>
+    <!-- section NAV-->
+    <!-- <section>
+        
+        <nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-center fixed-top ">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> <img src="img/logo_black.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+              </ul>
             </div>
-        </section>
-        <!-- Banner Section End -->
-
-        <!-- About Section Start -->
-        <section id="aboutme" class="section pt--100 pb--40">
-            <div class="container">
-                <!-- Section Title Start -->
-                <div class="section--title pb--60 text-center">
-                    <h2 class="h2 text-uppercase">About Me</h2>
-                </div>
-                <!-- Section Title End -->
-    
-                <div class="row row--md-vc">
-                    <div class="col-md-6 pb--60">
-                        <!-- Image Block Start -->
-                        <div class="img--block">
-                            <img src="img/about-img/about.jpg" alt="">
-                        </div>
-                        <!-- Image Block End -->
-                    </div>
-                    
-                    <div class="col-md-6 pb--60">
-                        <!-- About Block Start -->
-                        <div class="about--block">
-                            <div class="title">
-                                <h2 class="h4 fw--700 text-uppercase">Personal Details</h2>
-                            </div>
-    
-                            <div class="details pt--30 text-dark">
-                                <p>I am a young professional intending to continue my development as
-                                    an engineer. I think about results and objectives; I am enthusiastic
-                                    and work with decisiveness and conviction. I am proactive and find
-                                    positive ways to stimulate and engage with people. Programming
-                                    in Python and C# are my strengths. I'm currently developing my
-                                    computer vision and machine learning skills.</p>
-                            </div>
-    
-                            <div class="details pt--30">
-                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ea aliquid nostrum rem. Asperiores molestiae magni obcaecati aliquam quam aliquid reiciendis corrupti excepturi perferendis ab aut, inventore sunt hic iusto.</p> -->
-                            </div>
-    
-                            <div class="info pt--50">
-                                <table class="ff--primary">
-                                    <tbody>
-                                        <!-- <tr>
-                                            <th>
-                                                <i class="fa fa-calendar"></i>
-                                                <span>Brithday</span>
-                                            </th>
-                                            <td>12/10/1990</td>
-                                        </tr> -->
-                                        <tr>
-                                            <th>
-                                                <i class="fa fa-phone"></i>
-                                                <span>Phone</span>
-                                            </th>
-                                            <td><a href="tel:+8801787336084" class="btn-link ">+880 1787336084</a></td>
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                <i class="fa fa-envelope"></i>
-                                                <span>Email</span>
-                                            </th>
-                                            <td><a href="mailto:akashshartazkhan@gmail.com" class="btn-link">akashshartazkhan@gmail.com</a></td>
-                                        </tr>
-                                        <!-- <tr>
-                                            <th>
-                                                <i class="fa fa-linkedin"></i>
-                                                <span>LinkedIn</span>
-                                            </th>
-                                            <td><a href="https://twitter.com/_" class="btn-link">_</a></td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                <i class="fa fa-globe"></i>
-                                                <span>Website</span>
-                                            </th>
-                                            <td><a href="www.johndoe.com" class="btn-link">www.johndoe.com</a></td>
-                                        </tr> -->
-                                    </tbody>
-                                </table>
-                            </div>
-    
-                            <div class="social text-dark pt--30">
-                                <ul class="nav">
-                                    <li><a onclick="window.open('https://www.facebook.com/profile.php?id=61563951684151', '_blank')"><span class="fa fa-facebook" ></span></a></li>
-                                    <li><a onclick="window.open('https://twitter.com/shartaz_', '_blank')" ><span class="fa fa-twitter"></span></a></li>
-                                    <li><a onclick="window.open('https://www.behance.net/shartaz', '_blank')" ><span class="fa fa-behance"></span></a></li>
-                                    <li><a onclick="window.open('https://github.com/shartazkhan', '_blank')"><span class="fa fa-github"></span></a></li>
-                                    <li><a onclick="window.open('https://www.linkedin.com/in/shartaz-khan-akash/', '_blank')"><span class="fa fa-linkedin"></span></a></li>
-                                </ul>
-                            </div>
-    
-                            <div class="action pt--60">
-                                 <a onclick="window.open('https://drive.google.com/file/d/17LRSO5S3zvPyLvHcVORZyFKhRzP6GN2v/view?usp=sharing', '_blank')" class="btn btn-default">Download Resume</a>
-<!--                                 <a onclick="window.open('https://drive.google.com/file/d/17LRSO5S3zvPyLvHcVORZyFKhRzP6GN2v/view?usp=sharing">Download Resume</a> -->
-                            </div>
-                        </div>
-                        <!-- About Block End -->
-                    </div>
-                </div>
             </div>
-        </section>
-        <!-- About Section End -->
-
-        <!-- education Section Start -->
-        <section id="education" class="section pt--100 pb--40">
-            <div class="container">
-                <!-- Section Title Start -->
-                <div class="section--title pb--60 text-center">
-                    <h2 class="h2 text-uppercase">Education</h2>
-                </div>
-                <!-- Section Title End -->
+        </nav>
+    </section> -->
     
-                <!-- Timeline Block Start -->
-                <div class="timeline--block">
-                    <!-- <div class="title">
-                        <h3 class="h5">Education</h3>
-                    </div>
-    
-                    <div class="sub-title">
-                        <p class="fs--16">Knowledge is power. Information is liberating. Eduction is the premise of progress, in every society, in every family.</p>
-                    </div> -->
-    
-                    <!-- Timeline Items Start -->
-                    <ul class="timeline--items nav">
-                        <li>
-                            <!-- Timeline Item Start -->
-                            <div class="timeline--item">
-                                <div class="icon bg-default">
-                                    <i class="fa fa-graduation-cap"></i>
-                                </div>
-    
-                                <table class="table" data-scroll-reveal="bottom">
-                                    <tr>
-                                        <td>
-                                            <p class="date bg-primary">April 2018 ‑ March 2023</p>
-    
-                                            <div class="bottom">
-                                                <h4 class="name h6 fw--700">B.Sc in Computer Engineering (CoE)</h4>
-    
-                                                <p class="institute ff--primary">American International University‑Bangladesh (AIUB)</p>
-    
-                                                <p class="location fs--12">Dhaka, Bangladesh</p>
-                                            </div>
-                                        </td>
-                                        <!-- <td>
-                                            <div class="content">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ad, officiis! Saepe amet beatae nihil, tempora, qui odio sapiente aliquid sit quia ipsa quae.</p>
-                                            </div>
-                                        </td> -->
-                                    </tr>
-                                </table>
-                            </div>
-                            <!-- Timeline Item End -->
-                        </li>
-                        <li>
-                            <!-- Timeline Item Start -->
-                            <div class="timeline--item">
-                                <div class="icon bg-default">
-                                    <i class="fa fa-graduation-cap"></i>
-                                </div>
-    
-                                <table class="table" data-scroll-reveal="bottom">
-                                    <tr>
-                                        <td>
-                                            <p class="date bg-primary">2015 ‑ 2017</p>
-    
-                                            <div class="bottom">
-                                                <h4 class="name h6 fw--700">Higher Secondary School Certificate (Science)</h4>
-    
-                                                <p class="institute ff--primary">Dhaka Imperial College</p>
-    
-                                                <p class="location fs--12">Dhaka, Bangladesh</p>
-                                            </div>
-                                        </td>
-                                        <!-- <td>
-                                            <div class="content">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ad, officiis! Saepe amet beatae nihil, tempora, qui odio sapiente aliquid sit quia ipsa quae.</p>
-                                            </div>
-                                        </td> -->
-                                    </tr>
-                                </table>
-                            </div>
-                            <!-- Timeline Item End -->
-                        </li>
-                        <li>
-                            <!-- Timeline Item Start -->
-                            <div class="timeline--item">
-                                <div class="icon bg-default">
-                                    <i class="fa fa-graduation-cap"></i>
-                                </div>
-    
-                                <table class="table" data-scroll-reveal="bottom">
-                                    <tr>
-                                        <td>
-                                            <p class="date bg-primary">2012 - 2015</p>
-    
-                                            <div class="bottom">
-                                                <!-- <img src="img/edu_2.png" alt=""> -->
-                                                <h4 class="name h6 fw--700">Secondary School Certificate (Science)</h4>
-    
-                                                <p class="institute ff--primary">Motijheel Model School</p>
-    
-                                                <p class="location fs--12">Dhaka, Bangladesh</p>
-                                            </div>
-                                        </td>
-                                        <!-- <td>
-                                            <div class="content">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ad, officiis! Saepe amet beatae nihil, tempora, qui odio sapiente aliquid sit quia ipsa quae.</p>
-                                            </div>
-                                        </td> -->
-                                    </tr>
-                                </table>
-                            </div>
-                            <!-- Timeline Item End -->
-                        </li>
-                        <li>
-                            <!-- Timeline Item Start -->
-                            <div class="timeline--item">
-                                <div class="icon bg-default">
-                                    <i class="fa fa-graduation-cap"></i>
-                                </div>
-    
-                                <table class="table" data-scroll-reveal="bottom">
-                                    <tr>
-                                        <td>
-                                            <p class="date bg-primary">2008 - 2012</p>
-    
-                                            <div class="bottom">
-                                                <!-- <img src="img/edu_2.png" alt=""> -->
-                                                <h4 class="name h6 fw--700">3-6 / Primary School Certificate</h4>
-    
-                                                <p class="institute ff--primary">Barishal Zilla School</p>
-    
-                                                <p class="location fs--12">Barishal, Bangladesh</p>
-                                            </div>
-                                        </td>
-                                        <!-- <td>
-                                            <div class="content">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ad, officiis! Saepe amet beatae nihil, tempora, qui odio sapiente aliquid sit quia ipsa quae.</p>
-                                            </div>
-                                        </td> -->
-                                    </tr>
-                                </table>
-                            </div>
-                            <!-- Timeline Item End -->
-                        </li>
-                    </ul>
-                    <!-- Timeline Items End -->
-                </div>
-                <!-- Timeline Block End -->
+    <!-- section name-->
+    <section id="home" style="margin-top:50px">
+        <div class="container text-center">
+            <div class="row"> <!-- add rounded to make round corners-->
+              <div class="col"> <!-- col-01-->
+                <img src="src\ska.png" alt="" class="img-fluid">
+              </div>
             </div>
-        </section>
-        <!-- education Section End -->
-
-        <!-- Experience Section Start -->
-        <section id="experience" class="section pt--100 pb--100">
-            <div class="container">
-            
-                <!-- Section Title Start -->
-                <div class="section--title pb--60 text-center">
-                    <h2 class="h2 text-uppercase">Work Experience</h2>
-                </div>
-                <!-- Section Title End -->
-                <!-- Timeline Block Start -->
-                <div class="timeline--block">
-                    
-    
-                    <!-- Timeline Items Start -->
-                    <ul class="timeline--items nav">
-                        <li>
-                            <!-- Timeline Item Start -->
-                            <div class="timeline--item">
-                                <div class="icon bg-light">
-                                    <i class="fa fa-briefcase"></i>
-                                </div>
-    
-                                <table class="table" data-scroll-reveal="bottom">
-                                    <tr>
-                                        <td>
-                                            <p class="date bg-primary">August 2022 ‑ January 2023</p>
-    
-                                            <div class="bottom">
-                                                <h4 class="name h6 fw--700">Research Assistant</h4>
-    
-                                                <p class="institute ff--primary">Dr. Anawarul Abedin Institute of Innovation (DA2I2)</p>
-    
-                                                <p class="location fs--12">Dhaka, Bangladesh</p>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="content">
-                                                <p> I have gained valuable experience by working with various <b><span class="text-primary">Machine Learning (ML)</span></b> models to efficiently detect TV channels for a TRP project. Additionally, I have hands-on experience with different Microcontrollers, Microprocessors, and Sensors, utilizing them to construct innovative projects. These opportunities have enriched my skills and knowledge in the field, enabling me to pursue my passion for technology and problem-solving.</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <!-- Timeline Item End -->
-                        </li>
-                        <li>
-                            <!-- Timeline Item Start -->
-                            <div class="timeline--item">
-                                <div class="icon bg-light">
-                                    <i class="fa fa-briefcase"></i>
-                                </div>
-    
-                                <table class="table" data-scroll-reveal="bottom">
-                                    <tr>
-                                        <td>
-                                            <p class="date bg-primary">May 2022 ‑ July 2022</p>
-    
-                                            <div class="bottom">
-                                                <h4 class="name h6 fw--700">Research and Development Intern</h4>
-    
-                                                <p class="institute ff--primary">Faculty of Engineering, AIUB</p>
-    
-                                                <p class="location fs--12">Dhaka, Bangladesh</p>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="content">
-                                                <p>&bull; Constructed custom <b><span class="text-primary">Dataset</span></b> for a Machine Learning project. <br><br>
-                                                    &bull; Automated different tasks using Python 3.</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <!-- Timeline Item End -->
-                        </li>
-                        <li>
-                            <!-- Timeline Item Start -->
-                            <div class="timeline--item">
-                                <div class="icon bg-light">
-                                    <i class="fa fa-briefcase"></i>
-                                </div>
-    
-                                <table class="table" data-scroll-reveal="bottom">
-                                    <tr>
-                                        <td>
-                                            <p class="date bg-primary">May 2021 ‑ Current</p>
-    
-                                            <div class="bottom">
-                                                <h4 class="name h6 fw--700">IT and Graphic Designer</h4>
-    
-                                                <p class="institute ff--primary">Semiotify</p>
-    
-                                                <p class="location fs--12">Dhaka, Bangladesh</p>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="content">
-                                                <p>I was responsible for identifying opportunities for system improvements and implementing necessary updates. Additionally, I <b><span class="text-primary">collaborated</span></b> with cross-functional teams to support various business needs and goals. Moreover, I took charge of all <b><span class="text-primary">graphic designs</span></b> and branding-related tasks.</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <!-- Timeline Item End -->
-                        </li>
-                    
-                    </ul>
-                    <!-- Timeline Items End -->
-                </div>
-                <!-- Timeline Block End -->
-            </div>
-        </section>
-        <!-- Experience Section End -->
-
-        <!-- Volunteering and Leadership Experience Section Start -->
-        <section class="section pt--100 pb--100 bg-light">
-            <div class="container">
-                <div class="section--title pb--60 text-center">
-                    <h2 class="h2 text-uppercase">Volunteering and Leadership Experience</h2>
-                </div>
-                <!-- Timeline Block Start -->
-                <div class="timeline--block">
-                    <!-- <div class="title">
-                        <h3 class="h5">Volunteering and Leadership Experience</h3>
-                    </div> -->
-    
-                    <!-- <div class="sub-title">
-                        <p class="fs--16">No matter how long you train someone to be brave, you never know if they are not until something real happens.</p>
-                    </div> -->
-    
-                    <!-- Timeline Items Start -->
-                    <ul class="timeline--items nav">
-                        <li>
-                            <!-- Timeline Item Start -->
-                            <div class="timeline--item">
-                                <div class="icon bg-light">
-                                    <i class="fa fa-briefcase"></i>
-                                </div>
-    
-                                <table class="table" data-scroll-reveal="bottom">
-                                    <tr>
-                                        <td>
-                                            <p class="date bg-primary">May 2021 ‑ August 2022</p>
-    
-                                            <div class="bottom">
-                                                <h4 class="name h6 fw--700">Vice Chairperson</h4>
-    
-                                                <p class="institute ff--primary">IEEE AIUB Student Branch</p>
-    
-                                                <p class="location fs--12">Dhaka, Bangladesh</p>
-                                            </div>
-                                        </td>
-                                        
-                                    </tr>
-                                </table>
-                            </div>
-                            <!-- Timeline Item End -->
-                        </li>
-                        <li>
-                            <!-- Timeline Item Start -->
-                            <div class="timeline--item">
-                                <div class="icon bg-light">
-                                    <i class="fa fa-briefcase"></i>
-                                </div>
-    
-                                <table class="table" data-scroll-reveal="bottom">
-                                    <tr>
-                                        <td>
-                                            <p class="date bg-primary">January 2021 ‑ May 2022</p>
-    
-                                            <div class="bottom">
-                                                <h4 class="name h6 fw--700">Graphic Designer</h4>
-    
-                                                <p class="institute ff--primary">IEEE Region 10 Young Professionals</p>
-    
-                                                <p class="location fs--12">Virtual</p>
-                                            </div>
-                                        </td>
-                                        <!-- <td>
-                                            <div class="content">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ad, officiis! Saepe amet beatae nihil, tempora, qui odio sapiente aliquid sit quia ipsa quae.</p>
-                                            </div>
-                                        </td> -->
-                                    </tr>
-                                </table>
-                            </div>
-                            <!-- Timeline Item End -->
-                        </li>
-                        <li>
-                            <!-- Timeline Item Start -->
-                            <div class="timeline--item">
-                                <div class="icon bg-light">
-                                    <i class="fa fa-briefcase"></i>
-                                </div>
-    
-                                <table class="table" data-scroll-reveal="bottom">
-                                    <tr>
-                                        <td>
-                                            <p class="date bg-primary">February 2020 ‑ December 2020</p>
-    
-                                            <div class="bottom">
-                                                <h4 class="name h6 fw--700">Creative Designer</h4>
-    
-                                                <p class="institute ff--primary">Media & Publicity Team, IEEE Region 10 Student Activities Committee</p>
-    
-                                                <p class="location fs--12">Virtual</p>
-                                            </div>
-                                        </td>
-                                        <!-- <td>
-                                            <div class="content">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ad, officiis! Saepe amet beatae nihil, tempora, qui odio sapiente aliquid sit quia ipsa quae.</p>
-                                            </div>
-                                        </td> -->
-                                    </tr>
-                                </table>
-                            </div>
-                            <!-- Timeline Item End -->
-                        </li>
-                        <li>
-                            <!-- Timeline Item Start -->
-                            <div class="timeline--item">
-                                <div class="icon bg-light">
-                                    <i class="fa fa-briefcase"></i>
-                                </div>
-    
-                                <table class="table" data-scroll-reveal="bottom">
-                                    <tr>
-                                        <td>
-                                            <p class="date bg-primary">2020</p>
-    
-                                            <div class="bottom">
-                                                <h4 class="name h6 fw--700">Creative Designer</h4>
-    
-                                                <p class="institute ff--primary">IEEE AIUB Student Branch</p>
-    
-                                                <p class="location fs--12">Dhaka, Bangladesh</p>
-                                            </div>
-                                        </td>
-                                        <!-- <td>
-                                            <div class="content">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ad, officiis! Saepe amet beatae nihil, tempora, qui odio sapiente aliquid sit quia ipsa quae.</p>
-                                            </div>
-                                        </td> -->
-                                    </tr>
-                                </table>
-                            </div>
-                            <!-- Timeline Item End -->
-                        </li>
-                        <li>
-                            <!-- Timeline Item Start -->
-                            <div class="timeline--item">
-                                <div class="icon bg-light">
-                                    <i class="fa fa-briefcase"></i>
-                                </div>
-    
-                                <table class="table" data-scroll-reveal="bottom">
-                                    <tr>
-                                        <td>
-                                            <p class="date bg-primary">2019</p>
-    
-                                            <div class="bottom">
-                                                <h4 class="name h6 fw--700">Volunteer</h4>
-    
-                                                <p class="institute ff--primary">IEEE AIUB Student Branch</p>
-    
-                                                <p class="location fs--12">Dhaka, Bangladesh</p>
-                                            </div>
-                                        </td>
-                                        <!-- <td>
-                                            <div class="content">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ad, officiis! Saepe amet beatae nihil, tempora, qui odio sapiente aliquid sit quia ipsa quae.</p>
-                                            </div>
-                                        </td> -->
-                                    </tr>
-                                </table>
-                            </div>
-                            <!-- Timeline Item End -->
-                        </li>
-                    </ul>
-                    <!-- Timeline Items End -->
-                </div>
-                <!-- Timeline Block End -->
-            </div>
-        </section>
-        <!-- Volunteering and Leadership Experience Section End -->
-
-        <!-- Skills Section Start -->
-        <section id="skills" class="section pt--100 pb--40" data-bg-img="img/skills-img/personal.jpg" data-overlay="0.9">
-            <div class="container">
-                <!-- Section Title Start -->
-                <div class="section--title pb--60 text-center">
-                    <h2 class="h2 text-white text-uppercase">My Skills</h2>
-                </div>
-                <!-- Section Title End -->
-    
-                <div class="row">
-                    <div class="col-md-6 pb--60">
-                        <!-- Skills Items Start -->
-                        <div class="skills--items">
-                            <div class="skill--title text-uppercase">
-                                <h3 class="h4 text-white">Programming Languages</h3>
-                            </div>
-    
-                            <!-- Skill Item Start -->
-                            <div class="skill--item">
-                                <h4 class="h6 fw--400 text-white text-uppercase clearfix">
-                                    <span class="skill--text">Python</span>
-                                    <span class="skill--count float--right">70%</span>
-                                </h4>
-    
-                                <p class="skill--progress" style="width: 70%;" data-trigger="progress_bar"></p>
-                            </div>
-                            <!-- Skill Item End -->
-    
-                            <!-- Skill Item Start -->
-                            <div class="skill--item">
-                                <h4 class="h6 fw--400 text-white text-uppercase clearfix">
-                                    <span class="skill--text">C# </span>
-                                    <span class="skill--count float--right">50%</span>
-                                </h4>
-    
-                                <p class="skill--progress" style="width: 50%;" data-trigger="progress_bar"></p>
-                            </div>
-                            <!-- Skill Item End -->
-    
-                            <!-- Skill Item Start -->
-                            <div class="skill--item">
-                                <h4 class="h6 fw--400 text-white text-uppercase clearfix">
-                                    <span class="skill--text">Java</span>
-                                    <span class="skill--count float--right">50%</span>
-                                </h4>
-    
-                                <p class="skill--progress" style="width: 50%;" data-trigger="progress_bar"></p>
-                            </div>
-                            <!-- Skill Item End -->
-    
-                            <!-- Skill Item Start -->
-                            <div class="skill--item">
-                                <h4 class="h6 fw--400 text-white text-uppercase clearfix">
-                                    <span class="skill--text">C / C++</span>
-                                    <span class="skill--count float--right">50%</span>
-                                </h4>
-    
-                                <p class="skill--progress" style="width: 50%;" data-trigger="progress_bar"></p>
-                            </div>
-                            <!-- Skill Item End -->
-    
-                            <!-- Skill Item Start -->
-                            <div class="skill--item">
-                                <h4 class="h6 fw--400 text-white text-uppercase clearfix">
-                                    <span class="skill--text">Assembly Language</span>
-                                    <span class="skill--count float--right">40%</span>
-                                </h4>
-    
-                                <p class="skill--progress" style="width: 40%;" data-trigger="progress_bar"></p>
-                            </div>
-                            <!-- Skill Item End -->
-                        </div>
-                        <!-- Skills Items End -->
-                    </div>
-    
-                    <div class="col-md-6 pb--60">
-                        <!-- Skills Items Start -->
-                        <div class="skills--items">
-                            <div class="skill--title text-uppercase">
-                                <h3 class="h4 text-white">Software’s/Applications</h3>
-                            </div>
-    
-                            <!-- Skill Item Start -->
-                            <div class="skill--item">
-                                <h4 class="h6 fw--400 text-white text-uppercase clearfix">
-                                    <span class="skill--text">Jupyter Notebook / Jupyter Labs</span>
-                                    <span class="skill--count float--right">70%</span>
-                                </h4>
-    
-                                <p class="skill--progress" style="width: 70%;" data-trigger="progress_bar"></p>
-                            </div>
-                            <!-- Skill Item End -->
-    
-                            <!-- Skill Item Start -->
-                            <div class="skill--item">
-                                <h4 class="h6 fw--400 text-white text-uppercase clearfix">
-                                    <span class="skill--text">Microsoft Office</span>
-                                    <span class="skill--count float--right">80%</span>
-                                </h4>
-    
-                                <p class="skill--progress" style="width: 80%;" data-trigger="progress_bar"></p>
-                            </div>
-                            <!-- Skill Item End -->
-    
-                            <!-- Skill Item Start -->
-                            <div class="skill--item">
-                                <h4 class="h6 fw--400 text-white text-uppercase clearfix">
-                                    <span class="skill--text">Adobe Illustrator</span>
-                                    <span class="skill--count float--right">80%</span>
-                                </h4>
-    
-                                <p class="skill--progress" style="width: 80%;" data-trigger="progress_bar"></p>
-                            </div>
-                            <!-- Skill Item End -->
-    
-                            <!-- Skill Item Start -->
-                            <div class="skill--item">
-                                <h4 class="h6 fw--400 text-white text-uppercase clearfix">
-                                    <span class="skill--text">Adobe Photoshop</span>
-                                    <span class="skill--count float--right">50%</span>
-                                </h4>
-    
-                                <p class="skill--progress" style="width: 50%;" data-trigger="progress_bar"></p>
-                            </div>
-                            <!-- Skill Item End -->
-    
-                            <!-- Skill Item Start -->
-                            <div class="skill--item">
-                                <h4 class="h6 fw--400 text-white text-uppercase clearfix">
-                                    <span class="skill--text">Matlab </span>
-                                    <span class="skill--count float--right">40%</span>
-                                </h4>
-    
-                                <p class="skill--progress" style="width: 40%;" data-trigger="progress_bar"></p>
-                            </div>
-                            <!-- Skill Item End -->
-                        </div>
-                        <!-- Skills Items End -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Skills Section End -->
-
-        <!-- achivments Section Start -->
-        <section id="achivments" class="section pt--100 pb--40 bg-light">
-            <div class="container">
-                <!-- Section Title Start -->
-               <div class="section--title pb--60 text-center">
-                   <h2 class="h2 text-uppercase">Honours & Awards</h2>
-               </div>
-               <!-- Section Title End -->
-   
-               <div class="row row--md-vc">
-                   <div class="col-md-6 pb--60">
-                       <!-- Image Block Start -->
-                       <div class="img--block">
-                           <img src="img/Picture3.gif" alt="">
-                       </div>
-                       <!-- Image Block End -->
-                   </div>
-                   
-                   <div class="col-md-6 pb--60">
-                       <!-- award Block Start -->
-                       <div class="about--block">
-                           <div class="title">
-                               <h2 class="h4 fw--700 text-uppercase">Vice‑Chancellor’s Award</h2>
-                               <p>American International University-Bangladesh / 2023</p>
-                           </div>
-   
-                           <div class="details pt--30 text-dark">
-                               <p>In the 21st Convocation of American International University-Bangladesh, my group and I were proudly awarded the Vice-Chancellor's Awards for our exceptional project/thesis, recognized as the best among several groups.  
-                                   <a href="https://www.aiub.edu/21st-convocation-of-aiub-held">Know more</a>
-                               </p>
-   
-                           </div>
-   
-                       </div>
-                       <!-- award Block End -->
-                       <br>
-                       <br>
-                       <!-- award Block Start -->
-                       <div class="about--block">
-                           <div class="title">
-                               <h2 class="h4 fw--700 text-uppercase">Dean’s Award</h2>
-                               <p>American International University-Bangladesh / 2022</p>
-                           </div>
-   
-                           <div class="details pt--30 text-dark">
-                               <p>My group and I were honored to receive the Dean’s Award from the Faculty of 
-                                   Engineering at American International University-Bangladesh during the academic 
-                                   year 2021-22. We were recognized for our outstanding capstone project, which was 
-                                   deemed the best in its category. 
-                               </p>
-   
-                           </div>
-   
-                       </div>
-                       <!-- award Block End -->
-                   </div>
-                   
-               </div>
-               
-   
-           </div>
-        </section>
-        <!-- achivments Section End -->
-
-        <!-- publication Section Start -->
-        <section id="publication" class="section pt--100 pb--40">
-            <div class="container">
-                <!-- Section Title Start -->
-               <div class="section--title pb--60 text-center">
-                   <h2 class="h2 text-uppercase">Publication</h2>
-               </div>
-               <!-- Section Title End -->
-   
-               <div class="row row--md-vc">
-                   <div class="col-md-6 pb--60">
-                       <!-- Image Block Start -->
-                       <div class="img--block">
-                           <img src="img/paper.gif" alt="">
-                       </div>
-                       <!-- Image Block End -->
-                   </div>
-                   
-                   <div class="col-md-6 pb--60">
-                       <!-- award Block Start -->
-                       <div class="about--block">
-                           <div class="title">
-                               <h2 class="h4 fw--700 text-uppercase">Action Recognition Based Real‑time Bangla Sign Language Detection and Sentence Formation</h2>
-                               <p>3rd International Conference on Robotics, Electrical and Signal Processing Techniques, 2023, Dhaka, Bangladesh / 2023</p>
-                           </div>
-   
-                           <div class="details pt--30 text-dark">
-                               <p>This research paper proposes a real-time Bangla Sign Language (BdSL) detection system for sentence identification using computer vision techniques. 
-                                   The system uses the...<a href="https://ieeexplore.ieee.org/document/10070072">show more</a>
-                               </p>
-   
-                           </div>
-   
-                       </div>
-                       <!-- award Block End -->
-                       <br>
-                       <br>
-                       <!-- award Block Start -->
-                       <div class="about--block">
-                           <div class="title">
-                               <h2 class="h4 fw--700 text-uppercase">Deep Learning‑Based Prediction of Football Players’ Performance During Penalty Shootout</h2>
-                               <p>26th International Conference on Computer and Information Technology (ICCIT), Cox’s Bazar, Bangladesh</p>
-                           </div>
-   
-                           <div class="details pt--30 text-dark">
-                               <p>A deep learning-based prediction model is proposed in this paper to predict the performance of football players during penalty shootouts.
-                               </p>
-   
-                           </div>
-   
-                       </div>
-                       <!-- award Block End -->
-                   </div>
-                   
-               </div>
-               
-   
-           </div>
-        </section>
-        <!-- publication Section End -->
-
-        <!-- idea Section Start -->
-        <section class="section pt--100 pb--100" data-bg-parallax="img/call-to-action-img/paper2.gif" data-overlay="0.7">
-            <div class="container">
-                <!-- Call To Action Block Start -->
-                <div class="cta--block text-center">
-                    <div class="title">
-                        <h2 class="h2 text-white">Have an exciting idea for a project?</h2>
-                    </div>
-    
-                    <div class="content fs--20 pt--10 text-white">
-                        <!-- <p>Lorem ipsum dolor sit amet, elit at debitis, consequuntur labore mollitia ea odit eum.</p> -->
-                    </div>
-    
-                    <div class="action pt--20">
-                        <a href="mailto:akashshartazkhan@gmail.com" class="btn btn-white">Let's collaborate</a>
-                    </div>
-                </div>
-                <!-- Call To Action Block End -->
-            </div>
-        </section>
-        <!-- idea Section End -->
-
-        <!-- projects Section Start -->
-        <section id="projects" class="section pt--80 pb--20">
-            <div class="container">
-                <!-- Section Title Start -->
-               <div class="section--title pb--60 text-center">
-                   <h2 class="h2 text-uppercase">Projects</h2>
-               </div>
-               <!-- Section Title End -->
-   
-               <div class="row row--md-vc">
-                   <div class="col-md-6 pb--60">
-                       <!-- Image Block Start -->
-                       <div class="img--block">
-                           <img src="img/paper2.gif" alt="">
-                       </div>
-                       <!-- Image Block End -->
-                   </div>
-                   
-                   <div class="col-md-6 pb--60">
-                       <!-- project Block Start -->
-                       <div class="about--block">
-                           <div class="title">
-                               <h2 class="h4 fw--700 text-uppercase">Deep Learning‑Based Prediction of Football Players’ Performance During Penalty Shootout</h2>
-                               <p>26th International Conference on Computer and Information Technology (ICCIT), Cox’s Bazar, Bangladesh</p>
-                           </div>
-   
-                           <div class="details pt--30 text-dark">
-                               <p>
-                                   A deep learning-based prediction model is used in this project to predict the performance of football players during penalty shootouts.
-                               </p>
-   
-                           </div>
-   
-                       </div>
-                       <!-- project Block End -->
-                       
-                   </div>
-                   
-               </div>
-   
-               <div class="row row--md-vc">
-                   <div class="col-md-6 pb--60">
-                       <!-- Image Block Start -->
-                       <div class="img--block">
-                           <img src="img/PROJECT_2.png" alt="">
-                       </div>
-                       <!-- Image Block End -->
-                   </div>
-                   
-                   <div class="col-md-6 pb--60">
-                       <!-- project Block Start -->
-                       <div class="about--block">
-                           <div class="title">
-                               <h2 class="h4 fw--700 text-uppercase">Microcenter - A modern shop management system</h2>
-                               <p>Object Oriented Programming 2 project with C# </p>
-                           </div>
-   
-                           <div class="details pt--30 text-dark">
-                               <p>
-                                   
-                               </p>
-   
-                           </div>
-   
-                       </div>
-                       <!-- project Block End -->
-                       
-                   </div>
-                   
-               </div>
-   
-               <div class="row row--md-vc">
-                   <div class="col-md-6 pb--60">
-                       <!-- Image Block Start -->
-                       <div class="img--block">
-                           <img src="img/PROJECT_3.png" alt="">
-                       </div>
-                       <!-- Image Block End -->
-                   </div>
-                   
-                   <div class="col-md-6 pb--60">
-                       <!-- project Block Start -->
-                       <div class="about--block">
-                           <div class="title">
-                               <h2 class="h4 fw--700 text-uppercase">automatic irrigation system</h2>
-                               <p>Paid project developed in DA2I2</p>
-                           </div>
-   
-                           <div class="details pt--30 text-dark">
-                               <p>
-                                   
-                               </p>
-   
-                           </div>
-   
-                       </div>
-                       <!-- project Block End -->
-                       
-                   </div>
-                   
-               </div>
-   
-               <div class="row row--md-vc">
-                   <div class="col-md-6 pb--60">
-                       <!-- Image Block Start -->
-                       <div class="img--block">
-                           <img src="img/PROJECT_4.png" alt="">
-                       </div>
-                       <!-- Image Block End -->
-                   </div>
-                   
-                   <div class="col-md-6 pb--60">
-                       <!-- project Block Start -->
-                       <div class="about--block">
-                           <div class="title">
-                               <h2 class="h4 fw--700 text-uppercase">Football/Line following Bot using arduino</h2>
-                               <p>Competition</p>
-                           </div>
-   
-                           <div class="details pt--30 text-dark">
-                               <p>
-                                   
-                               </p>
-   
-                           </div>
-   
-                       </div>
-                       <!-- project Block End -->
-                       
-                   </div>
-                   
-               </div>
-   
-   
-               <div class="row row--md-vc">
-                   <div class="col-md-6 pb--60">
-                       <!-- Image Block Start -->
-                       <div class="img--block">
-                           <img src="img/PROJECT_5.png" alt="">
-                       </div>
-                       <!-- Image Block End -->
-                   </div>
-                   
-                   <div class="col-md-6 pb--60">
-                       <!-- project Block Start -->
-                       <div class="about--block">
-                           <div class="title">
-                               <h2 class="h4 fw--700 text-uppercase">Design of Automatic Parking System Using Arduino</h2>
-                               <p>Microprocessor Course Project</p>
-                           </div>
-   
-                           <div class="details pt--30 text-dark">
-                               <p>
-                                   
-                               </p>
-   
-                           </div>
-   
-                       </div>
-                       <!-- project Block End -->
-                       
-                   </div>
-                   
-               </div>
-               
-   
-           </div>
-        </section>
-        <!-- projects Section End -->
-
-        <!-- Art Section Start -->
-        <section id="art" class="section pt--100 pb--100 bg-light">
-            <div class="container">
-                <!-- Section Title Start -->
-               <div class="section--title pb--60 text-center">
-                   <h2 class="h2 text-uppercase">Music / Art and so on</h2>
-               </div>
-               <!-- Section Title End -->
-
-               <div class="row row--md-vc">
-                <div class="col-md-6 pb--60">
-                    <!-- Image Block Start -->
-                    <div class="img--block">
-                        <a href="https://www.youtube.com/watch?v=2nt1VrkGtA8&t=1s" target="_blank" class="img-link">
-                            <img src="img/sddefault.jpg" alt="labhnai">
-                          </a>
-                    </div>
-                    <!-- Image Block End -->
-                </div>
-                
-                <div class="col-md-6 pb--60">
-                    <!-- project Block Start -->
-                    <div class="about--block">
-                        <div class="title">
-                            <h2 class="h4 fw--700 text-uppercase">I Wrote A Song</p>
-                        </div>
-
-                        <div class="details pt--30 text-dark">
-                            <p>
-                                Band: Fused / Song: Labh Nai
-                            </p>
-                           
-                        </div>
-
-                    </div>
-                    <!-- project Block End -->
-                    
-                </div>
-                
-            </div>
-            
-   
-           </div>
-        </section>
-        <!-- Art Section End -->
-
-        <!-- Testimonial Section Start -->
-    <section id="testimonial" class="section pt--90 pb--90" data-bg-parallax="img/testimonial-img/bg.jpg" data-overlay="0.5">
-        <div class="container">
-            <!-- Testimonial Slider Start -->
-            <div class="testimonial--slider owl-carousel" data-owl-dots="true">
-                <!-- Testimonial Item Start -->
-                <div class="testimonial--item text-white">
-                    <div class="icon">
-                        <i class="fa fa-comments"></i>
-                    </div>
-
-                    <blockquote>
-                        <p>Akash is a very creative person with a knack for problem-solving. From knowing nothing about a certain topic to finding an appropriate solution to the problem, Akash can do it all in a logical and concise way. Because of this unique mindset, I have relied on Akash on several occasions and always received a workable solution. I wish him all the very best for his future endeavors and hope he shines to the peak of his potential.</p>
-
-                        <footer>Kaushik Mahmud @ DA2I2.</footer>
-                    </blockquote>
-                </div>
-                <!-- Testimonial Item End -->
-
-                <!-- Testimonial Item Start -->
-                <div class="testimonial--item text-white">
-                    <div class="icon">
-                        <i class="fa fa-comments"></i>
-                    </div>
-
-                    <blockquote>
-                        <p>Where Creativity and Innovation Collide! He paints the world with captivating visuals as a Graphics Designer for IEEE AIUB Student Branch, fusing artistic brilliance with cutting-edge technology and illuminating the path of progress.</p>
-
-                        <footer>Dewan Mahnaaz Mahmud @ IEEE AIUB SB</footer>
-                    </blockquote>
-                </div>
-                <!-- Testimonial Item End -->
-
-                <!-- Testimonial Item Start -->
-                <!-- <div class="testimonial--item text-white">
-                    <div class="icon">
-                        <i class="fa fa-comments"></i>
-                    </div>
-
-                    <blockquote>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-
-                        <footer>Wayne Stone @ Company Inc.</footer>
-                    </blockquote>
-                </div> -->
-                <!-- Testimonial Item End -->
-            </div>
-            <!-- Testimonial Slider End -->
-        </div>
+          </div>
     </section>
-    <!-- Testimonial Section End -->
+<br>
 
-    <!-- Footer Section Start -->
-     <footer class="footer--section pt--100 pb--100 text-center">
-        <div class="container">
-            <!-- Footer Social Start -->
-            <div class="footer--social">
-                <ul class="nav" data-scroll-reveal="group">
-                    <li><a onclick="window.open('https://www.facebook.com/profile.php?id=61563951684151', '_blank')"><span class="fa fa-facebook" ></span></a></li>
-                    <li><a onclick="window.open('https://twitter.com/shartaz_', '_blank')" ><span class="fa fa-twitter"></span></a></li>
-                    <li><a onclick="window.open('https://www.behance.net/shartaz', '_blank')" ><span class="fa fa-behance"></span></a></li>
-                    <li><a onclick="window.open('https://github.com/shartazkhan', '_blank')"><span class="fa fa-github"></span></a></li>
-                    <li><a onclick="window.open('https://www.linkedin.com/in/shartaz-khan-akash/', '_blank')"><span class="fa fa-linkedin"></span></a></li>
-                </ul>
+
+     <!-- section 1-->
+    <section>
+      <div class="container text-center">
+        <div class="row border border-dark-subtle border-1"> <!-- Row 1-->
+          <div class="col-md-4 border-end border-dark-subtle"> <!-- Row 1 Col 1-->
+            <img src="src\dp.jpeg" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-4 border-end border-dark-subtle"> <!-- Row 1 Col 2-->
+            <h3 class="fw-bold text-start border-bottom border-dark-subtle">About me</h3>
+            <p class="text-start">I am a young professional intending to continue my development as an engineer. I think about results and objectives; I am enthusiastic and work with decisiveness and conviction. I am proactive and find positive ways to stimulate and engage with people. Programming in Python and C# are my strengths. I'm currently developing my computer vision and machine learning skills.</p>
+          </div>
+          <div class="col-md-4"> <!-- Row 1 Col 3-->
+            <h3 class="fw-bold text-start border-bottom border-dark-subtle">Get connected</h3>
+            <div class="row border-bottom border-dark-subtle p-2">
+              
+              <div class="col border-end border-dark-subtle">
+                <a onclick="window.open('https://www.linkedin.com/in/shartaz-khan-akash', '_blank')"><i class=" fa-brands fa-linkedin xt"></i></a>
+              </div>
+              <div class="col border-end border-dark-subtle">
+                <a onclick="window.open('https://github.com/shartazkhan', '_blank')"><i class=" fa-brands fa-github xt"></i></a>
+              </div>
+              <div class="col">
+                <a onclick="window.open('https://scholar.google.com/citations?user=jDMCZsQAAAAJ&hl=en', '_blank')"><i class=" fa-brands fa-google-scholar xt"></i></a>
+              </div>
             </div>
-            <!-- Footer Social End -->
+            <div class="row border-bottom border-dark-subtle  p-2">
+              <div class="col border-end border-dark-subtle">
+                <a onclick="window.open('https://www.behance.net/shartaz', '_blank')"><i class=" fa-brands fa-behance xt"></i></a>
+              </div>
+              <div class="col border-end border-dark-subtle">
+                <a onclick="window.open('https://www.facebook.com/profile.php?id=61563951684151', '_blank')"><i class=" fa-brands fa-x-twitter xt"></i></a>
+              </div>
+              <div class="col ">
+                <a onclick="window.open('https://www.facebook.com/shartaz.khan.akash/', '_blank')"><i class=" fa-brands fa-square-facebook xt"></i></a>
+              </div>
+            </div>
+            <div class="row border-bottom border-dark-subtle  p-2">
+              <div class="col">
+                <a onclick="window.open('mailto:akashshartazkhan@gmail.com', '_blank')"><i class=" fa-solid fa-at xt"> </i></a>
+              </div>
+              
+            </div>
+            
+          </div>
+      </div>
+    </section>
+<br>
+    <!-- section 2 Publications -->
+    <!-- <section>
+      <div class="container text-center">
+        <div class="row border border-dark-subtle border-1"> 
+          <div class="col-md-3 border-end border-dark-subtle"> 
+            <div class="row p-3"></div>
+            <div class="row"><i style="color: #1f1f1f" class="fa-solid fa-book-open xxl"></i></div>
+            <div class="row"><h3 class="fw-bold text-center">Publications</h3></div>
+          </div>
+          <div class="col-md"> 
+            <div class="row-md">
+              <div class="col-md">
+                <h3 class="fw-bold text-start border-bottom">Conference</h3>
+                <div class="row border-bottom">
+                  <p class="text-start">1. <b>S. K. Akash</b>, D. Chakraborty, M. M. Kaushik, B. S. Babu and M. S. R. Zishan, 
+                    "Action Recognition Based Real-time Bangla Sign Language Detection and Sentence Formation," 2023 3rd International Conference on Robotics, 
+                    Electrical and Signal Processing Techniques (ICREST), Dhaka, Bangladesh, 2023, pp. 311-315, doi: <i onclick="window.open('https://ieeexplore.ieee.org/document/10070072', '_blank')" class="cc">10.1109/ICREST57604.2023.10070072.</i></p>
+                </div>
+                <div class="row pt-2">
+                  <p class="text-start">2. D. Chakraborty, M. M. Kaushik, <b>S. K. Akash</b>, M. S. R. Zishan and M. S. Mahmud, "Deep
+                    Learning-Based Prediction of Football Players’ Performance During Penalty Shootout," 2023
+                    26th International Conference on Computer and Information Technology (ICCIT), Cox's Bazar,
+                    Bangladesh, 2023, pp. 1-6, doi: <i onclick="window.open('https://ieeexplore.ieee.org/document/10441247', '_blank')" class="cc"> 10.1109/ICCIT60459.2023.10441247.</i></p>
+                </div>
+            </div>
+            
+              
+          </div>
+      </div>
+    </section> -->
 
-            <!-- Copyright Text Start -->
-            <p class="copyright--text fs--16 ff--primary">Copyright &copy; 2023 <a href="#">Shartaz</a>. All Rights Reserved.</p>
-            <!-- Copyright Text End -->
+    <br>
+    <!-- section 2 Award -->
+    <!-- <section>
+      <div class="container text-center">
+
+        <div class="row border border-dark-subtle border-1"> 
+          <div class="col-md-3 pt-5 border-end border-dark-subtle"> 
+            <div class="row"><i style="color: #1f1f1f" class="fa-solid fa-award xxl"></i></div>
+            <div class="row"><h3 class="fw-bold text-center">Awards</h3></div>
+          </div>
+          <div class="col">
+                <div class="row border-bottom pt-3">
+                  <h4 class="text-start fw-bold">Vice‑Chancellor’s Award</h4>
+                  <p class="text-start ">In the 21st Convocation of American International University-Bangladesh, 
+                    my group and I were proudly awarded the Vice-Chancellor's Awards for our exceptional 
+                    project/thesis, recognized as the best among several groups
+                  </p>
+                </div>
+                <div class="row pt-3">
+                  <h4 class="text-start  fw-bold ">Dean’s Award</h4>
+                  <p class="text-start text-justified">My group and I were honored to receive the Dean’s Award from the Faculty of Engineering at American International University-Bangladesh 
+                    during the academic year 2021-22. We were recognized for our outstanding capstone project, which was deemed the best in its category.</p>
+                </div>
+          </div>
+          
         </div>
-    </footer>
-    <!-- Footer Section End -->
-    </div>
-    <!-- Wrapper End -->
 
-    <!-- Back To Top Button Start -->
-    <div id="backToTop">
-        <a href="#" class="btn btn-default active"><i class="fa fa-long-arrow-up"></i></a>
-    </div>
-    <!-- Back To Top Button End -->
+      </div>
+    </section> -->
+<br>
+    <section>
+      <div class="container text-center">
 
-    <!-- ==== Plugins Bundle ==== -->
-    <script src="js/plugins.min.js"></script>
+        <div class="row border border-dark-subtle border-1"> 
+          <div class="col-md-3 pt-2 border-end border-dark-subtle border-bottom border-dark-subtle"> 
+            <div class="row"><i style="color: #1f1f1f" class="fa-solid fa-book-open-reader xxl"></i></div> 
+            <div class="row"><h3 class="fw-bold text-center">Research Interests</h3></div>
+          </div>
+          <div class="col border-end border-dark-subtle">
+            <div class="row"><h3 class="fw-bold text-center border-bottom border-dark-subtle">Computer Vision</h3></div>
+            <div class="row"><h3 class="fw-bold text-center  border-bottom border-dark-subtle">Artificial Intelligence</h3></div>
+            <div class="row"><h3 class="fw-bold text-center  border-bottom border-dark-subtle">  Explainable AI (XAI) </h3></div>
+            <div class="row"><h3 class="fw-bold text-center border-bottom border-dark-subtle">  - </h3></div>
+          </div>
+          <div class="col">
+            <div class="row"><h3 class="fw-bold text-center border-bottom border-dark-subtle">Human Computer Interaction (HCI)</h3></div>
+            <div class="row"><h3 class="fw-bold text-center  border-bottom border-dark-subtle">-</h3></div>
+            <div class="row"><h3 class="fw-bold text-center  border-bottom border-dark-subtle">-</h3></div>
+            <!-- <div class="row"><h3 class="fw-bold text-center  border-bottom border-dark-subtle">-</h3></div> -->
+          </div>
+          
+        </div>
 
-    <!-- ==== Main Script ==== -->
-    <script src="js/main.js"></script>
+      </div>
+    </section>
+<br>
+    <!-- section 2 Publications -->
+    <section>
+      <div class="container text-center">
 
-</body>
+        <!-- Footer Section Start -->
+     <footer class="footer--section pt--100 pb--100 text-center">
+      <div class="container">
+          <!-- Copyright Text Start -->
+          <p class="copyright--text fs--16 ff--primary">Copyright &copy; 2025 <a href="https://shartaz.netlify.app/">Shartaz</a>. All Rights Reserved.</p>
+          <!-- Copyright Text End -->
+      </div>
+  </footer>
+
+      </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+
+  </body>
 </html>
