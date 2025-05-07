@@ -17,6 +17,15 @@
         color: #3367d1;
 }
 
+.texthov{
+    color: #000000;
+    display: inline-block;
+    }
+    
+    .texthov:hover {
+        color: #3367d1;
+}
+
 .xxl{
    
     font-size: 120px;
