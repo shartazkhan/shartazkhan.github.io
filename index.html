@@ -1,248 +1,196 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-     <!-- ==== Document Title ==== -->
-     <title>Shartaz Khan Akash</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  
-     <!-- ==== Document Meta ==== -->
-     <meta name="author" content="shartaz-khan-akash">
-     <meta name="description" content="">
-     <meta name="keywords" content="shartaz khan akash">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shartaz Khan Akash - Personal Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display & Lora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom styles for the old newspaper theme */
+        body {
+            font-family: 'Lora', serif;
+            background-color: #F5F3EF; /* An aged paper color */
+            color: #2a2a2a;
+        }
+        h1, h2, h3, h4, h5, h6, .headline {
+            font-family: 'Playfair Display', serif;
+        }
+        .section-title {
+            font-family: 'Lora', serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.875rem;
+            color: #575757;
+            text-align: center;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        .section-title::before, .section-title::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 3rem;
+            height: 1px;
+            background-color: #d1d1d1;
+        }
+        .section-title::before {
+            left: 25%;
+        }
+        .section-title::after {
+            right: 25%;
+        }
+    </style>
+</head>
+<body class="text-stone-800">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css"> 
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- ==== Favicon ==== -->
-     <!-- <link rel="icon" href="favicon.png" type="image/png"> -->
-
-     <!-- ==== Google Font ==== -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-      <!-- ==== Font Awesome ==== -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-     <link rel="stylesheet" href="css/custom.css" >
-
-     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="src/favicon.png">
-  </head>
-  <body>
-    <!-- section NAV-->
-    <!-- <section>
+    <!-- Main Content Area -->
+    <main class="container mx-auto p-8 md:p-12 lg:p-16">
         
-        <nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-center fixed-top ">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"> <img src="img/logo_black.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-              </ul>
-            </div>
-            </div>
-        </nav>
-    </section> -->
-    
-    <!-- section name-->
-    <section id="home" style="margin-top:50px">
-        <div class="container text-center">
-            <div class="row"> <!-- add rounded to make round corners-->
-              <div class="col"> <!-- col-01-->
-                <img src="src\ska.png" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-    </section>
-<br>
+        <!-- Header Section -->
+        <header class="text-center mb-12 border-y-4 border-double border-black py-4">
+            <h1 class="text-5xl md:text-7xl font-black">SHARTAZ KHAN AKASH</h1>
+            <p class="text-sm tracking-widest text-stone-600 mt-2">A PERSONAL PORTFOLIO & ACADEMIC RECORD</p>
+        </header>
 
+        <!-- Main Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
 
-     <!-- section 1-->
-    <section>
-      <div class="container text-center">
-        <div class="row border border-dark-subtle border-1"> <!-- Row 1-->
-          <div class="col-md-4 border-end border-dark-subtle"> <!-- Row 1 Col 1-->
-            <img src="src\dp.jpeg" alt="" class="img-fluid">
-          </div>
-          <div class="col-md-4 pt-2 border-end border-dark-subtle"> <!-- Row 1 Col 2-->
-            <h3 class="fw-bold text-start border-bottom border-dark-subtle border-top border-dark-subtle ">About me</h3>
-            <p class="text-start">I am a young professional intending to continue my development as an engineer. I think about results and objectives; I am enthusiastic and work with decisiveness and conviction. I am proactive and find positive ways to stimulate and engage with people. Programming in Python and C# are my strengths. I'm currently developing my computer vision and machine learning skills.</p>
-          </div>
-          <div class="col-md-4 pt-2"> <!-- Row 1 Col 3-->
-            <h3 class="fw-bold text-start border-bottom border-dark-subtle border-top border-dark-subtle">Get connected</h3>
-            <div class="row border-bottom border-dark-subtle p-2">
-              
-              <div class="col border-end border-dark-subtle">
-                <a onclick="window.open('https://www.linkedin.com/in/shartaz-khan-akash', '_blank')"><i class=" fa-brands fa-linkedin xt"></i></a>
-              </div>
-              <div class="col border-end border-dark-subtle">
-                <a onclick="window.open('https://github.com/shartazkhan', '_blank')"><i class=" fa-brands fa-github xt"></i></a>
-              </div>
-              <div class="col">
-                <a onclick="window.open('https://scholar.google.com/citations?user=jDMCZsQAAAAJ&hl=en', '_blank')"><i class=" fa-brands fa-google-scholar xt"></i></a>
-              </div>
-            </div>
-            <div class="row border-bottom border-dark-subtle  p-2">
-              <div class="col border-end border-dark-subtle">
-                <a onclick="window.open('https://www.behance.net/shartaz', '_blank')"><i class=" fa-brands fa-behance xt"></i></a>
-              </div>
-              <div class="col border-end border-dark-subtle">
-                <a onclick="window.open('https://www.facebook.com/profile.php?id=61563951684151', '_blank')"><i class=" fa-brands fa-x-twitter xt"></i></a>
-              </div>
-              <div class="col ">
-                <a onclick="window.open('https://www.facebook.com/shartaz.khan.akash/', '_blank')"><i class=" fa-brands fa-square-facebook xt"></i></a>
-              </div>
-            </div>
-            <div class="row border-bottom border-dark-subtle  p-2">
-              <div class="col">
-                <a onclick="window.open('mailto:akashshartazkhan@gmail.com', '_blank')"><i class=" fa-solid fa-at xt"> </i></a>
-              </div>
-              
-            </div>
-            
-          </div>
-      </div>
-    </section>
-<br>
-    <!-- section 2 Publications -->
-    <!-- <section>
-      <div class="container text-center">
-        <div class="row border border-dark-subtle border-1"> 
-          <div class="col-md-3 border-end border-dark-subtle"> 
-            <div class="row p-3"></div>
-            <div class="row"><i style="color: #1f1f1f" class="fa-solid fa-book-open xxl"></i></div>
-            <div class="row"><h3 class="fw-bold text-center">Publications</h3></div>
-          </div>
-          <div class="col-md"> 
-            <div class="row-md">
-              <div class="col-md">
-                <h3 class="fw-bold text-start border-bottom">Conference</h3>
-                <div class="row border-bottom">
-                  <p class="text-start">1. <b>S. K. Akash</b>, D. Chakraborty, M. M. Kaushik, B. S. Babu and M. S. R. Zishan, 
-                    "Action Recognition Based Real-time Bangla Sign Language Detection and Sentence Formation," 2023 3rd International Conference on Robotics, 
-                    Electrical and Signal Processing Techniques (ICREST), Dhaka, Bangladesh, 2023, pp. 311-315, doi: <i onclick="window.open('https://ieeexplore.ieee.org/document/10070072', '_blank')" class="cc">10.1109/ICREST57604.2023.10070072.</i></p>
+            <!-- Left Column: About & Contact -->
+            <aside class="lg:col-span-1 space-y-8 border-r border-stone-300 pr-8">
+                <div>
+                    <img src="https://placehold.co/400x400/e2e8f0/334155?text=SKA" 
+                         alt="Portrait of Shartaz Khan Akash" 
+                         class="object-cover w-full border-2 border-black p-1 shadow-sm">
+                    <h2 class="headline text-3xl font-bold mt-4">Shartaz Khan Akash</h2>
+                    <h3 class="font-semibold text-stone-700">Computer Engineer</h3>
+                    <p class="text-stone-600 mt-2 text-sm leading-relaxed">
+                        A Computer Engineer with a focus on machine learning and computer vision. My goal is to leverage my technical background to contribute to innovative research in artificial intelligence.
+                    </p>
                 </div>
-                <div class="row pt-2">
-                  <p class="text-start">2. D. Chakraborty, M. M. Kaushik, <b>S. K. Akash</b>, M. S. R. Zishan and M. S. Mahmud, "Deep
-                    Learning-Based Prediction of Football Players’ Performance During Penalty Shootout," 2023
-                    26th International Conference on Computer and Information Technology (ICCIT), Cox's Bazar,
-                    Bangladesh, 2023, pp. 1-6, doi: <i onclick="window.open('https://ieeexplore.ieee.org/document/10441247', '_blank')" class="cc"> 10.1109/ICCIT60459.2023.10441247.</i></p>
+                <hr class="border-stone-300">
+                <div>
+                    <h4 class="section-title"><span>Connect</span></h4>
+                    <div class="space-y-2 text-sm">
+                        <a href="mailto:akashshartazkhan@gmail.com" class="flex items-center gap-3 text-stone-700 hover:text-black transition-colors">
+                            <i class="fa-solid fa-at w-4 text-center"></i><span>Email</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shartaz-khan-akash" target="_blank" class="flex items-center gap-3 text-stone-700 hover:text-black transition-colors">
+                            <i class="fa-brands fa-linkedin-in w-4 text-center"></i><span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/shartazkhan" target="_blank" class="flex items-center gap-3 text-stone-700 hover:text-black transition-colors">
+                            <i class="fa-brands fa-github w-4 text-center"></i><span>GitHub</span>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=jDMCZsQAAAAJ&hl=en" target="_blank" class="flex items-center gap-3 text-stone-700 hover:text-black transition-colors">
+                            <i class="fa-brands fa-google-scholar w-4 text-center"></i><span>Google Scholar</span>
+                        </a>
+                        <a href="https://www.behance.net/shartaz" target="_blank" class="flex items-center gap-3 text-stone-700 hover:text-black transition-colors">
+                            <i class="fa-brands fa-behance w-4 text-center"></i><span>Behance</span>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            
-              
-          </div>
-      </div>
-    </section> -->
+                <hr class="border-stone-300">
+                 <div>
+                    <h4 class="section-title"><span>Accolades</span></h4>
+                    <ul class="list-none space-y-2 text-sm text-stone-700">
+                        <li><span class="font-semibold">Vice-Chancellor's Award</span><br>AIUB</li>
+                        <li><span class="font-semibold">Dean's Award</span><br>AIUB</li>
+                    </ul>
+                </div>
+            </aside>
 
-    <br>
-    <!-- section 2 Award -->
-    <!-- <section>
-      <div class="container text-center">
+            <!-- Center Column: Research & Publications -->
+            <section class="lg:col-span-2 space-y-8">
+                <div>
+                    <h2 class="headline text-4xl font-bold border-b-2 border-black pb-2 mb-4">Research Interests</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                        <div class="p-4 bg-[#EAE8E3] border border-stone-300">
+                            <h4 class="font-bold text-lg">Generative AI & LLMs</h4>
+                            <p class="text-stone-600">Exploring architecture and fine-tuning of Large Language Models and diffusion models.</p>
+                        </div>
+                        <div class="p-4 bg-[#EAE8E3] border border-stone-300">
+                            <h4 class="font-bold text-lg">Explainable AI (XAI)</h4>
+                            <p class="text-stone-600">Developing interpretable models to understand and trust complex AI systems.</p>
+                        </div>
+                        <div class="p-4 bg-[#EAE8E3] border border-stone-300">
+                            <h4 class="font-bold text-lg">Multimodal Learning</h4>
+                            <p class="text-stone-600">Fusing diverse data modalities like text, images, and sensor data for context-aware AI.</p>
+                        </div>
+                         <div class="p-4 bg-[#EAE8E3] border border-stone-300">
+                            <h4 class="font-bold text-lg">AI for Scientific Discovery</h4>
+                            <p class="text-stone-600">Leveraging ML to accelerate research in fields like materials science and drug discovery.</p>
+                        </div>
+                    </div>
+                </div>
+                 <hr class="border-stone-300">
+                <div>
+                    <h2 class="headline text-4xl font-bold border-b-2 border-black pb-2 mb-4">Publications</h2>
+                    <div class="space-y-6 text-sm">
+                        <div>
+                            <h4 class="font-bold text-lg">Action Recognition Based Real-time Bangla Sign Language Detection</h4>
+                            <p class="text-stone-600 mt-1">Developed a real-time system to generate Bangla sentences from sign language video feeds using Blaze Pose and an LSTM model, achieving 87.14% validation accuracy.</p>
+                            <p class="text-stone-600"><span class="italic">ICREST 2023.</span> <a href="https://ieeexplore.ieee.org/document/10070072" target="_blank" class="font-semibold text-stone-800 hover:underline">View Publication &rarr;</a></p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Deep Learning-Based Prediction of Football Players' Performance</h4>
+                            <p class="text-stone-600 mt-1">Created a system using YOLOv4, OpenCV, and pose estimation to predict goalpost targets during penalty shootouts by training an LSTM model on over 200,000 pose landmarks.</p>
+                            <p class="text-stone-600"><span class="italic">ICCIT 2023.</span> <a href="https://ieeexplore.ieee.org/document/10441247" target="_blank" class="font-semibold text-stone-800 hover:underline">View Publication &rarr;</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <div class="row border border-dark-subtle border-1"> 
-          <div class="col-md-3 pt-5 border-end border-dark-subtle"> 
-            <div class="row"><i style="color: #1f1f1f" class="fa-solid fa-award xxl"></i></div>
-            <div class="row"><h3 class="fw-bold text-center">Awards</h3></div>
-          </div>
-          <div class="col">
-                <div class="row border-bottom pt-3">
-                  <h4 class="text-start fw-bold">Vice‑Chancellor’s Award</h4>
-                  <p class="text-start ">In the 21st Convocation of American International University-Bangladesh, 
-                    my group and I were proudly awarded the Vice-Chancellor's Awards for our exceptional 
-                    project/thesis, recognized as the best among several groups
-                  </p>
+            <!-- Right Column: Experience & Skills -->
+            <aside class="lg:col-span-1 space-y-8 border-l border-stone-300 pl-8">
+                <div>
+                    <h4 class="section-title"><span>Experience</span></h4>
+                    <div class="space-y-4 text-sm">
+                        <div>
+                            <p class="font-semibold">Associate</p>
+                            <p class="text-stone-600">Acote Group (Sep 2024 - Apr 2025)</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Transmission Controller</p>
+                            <p class="text-stone-600">Green TV (Jun 2024 - Aug 2024)</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Research Assistant</p>
+                            <p class="text-stone-600">Dr. Anawarul Abedin Institute of Innovation (Aug 2022 - Jan 2023)</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="row pt-3">
-                  <h4 class="text-start  fw-bold ">Dean’s Award</h4>
-                  <p class="text-start text-justified">My group and I were honored to receive the Dean’s Award from the Faculty of Engineering at American International University-Bangladesh 
-                    during the academic year 2021-22. We were recognized for our outstanding capstone project, which was deemed the best in its category.</p>
+                <hr class="border-stone-300">
+                <div>
+                    <h4 class="section-title"><span>Technical Skills</span></h4>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="bg-stone-300 text-stone-800 font-medium px-2 py-1">Python</span>
+                        <span class="bg-stone-300 text-stone-800 font-medium px-2 py-1">PyTorch</span>
+                        <span class="bg-stone-300 text-stone-800 font-medium px-2 py-1">Tensorflow</span>
+                        <span class="bg-stone-300 text-stone-800 font-medium px-2 py-1">Scikit-learn</span>
+                        <span class="bg-stone-300 text-stone-800 font-medium px-2 py-1">OpenCV</span>
+                        <span class="bg-stone-300 text-stone-800 font-medium px-2 py-1">Keras</span>
+                        <span class="bg-stone-300 text-stone-800 font-medium px-2 py-1">Matlab</span>
+                        <span class="bg-stone-300 text-stone-800 font-medium px-2 py-1">SQL</span>
+                    </div>
                 </div>
-          </div>
-          
+                 <hr class="border-stone-300">
+                <div>
+                    <h4 class="section-title"><span>Education</span></h4>
+                     <p class="font-semibold text-sm">B.Sc. in Computer Engineering</p>
+                     <p class="text-stone-600 text-sm">American International University-Bangladesh</p>
+                </div>
+            </aside>
+
         </div>
 
-      </div>
-    </section> -->
-<br>
-    <section>
-      <div class="container text-center">
+    </main>
 
-        <div class="row border border-dark-subtle border-1"> 
-          <div class="col-md-3 pt-2 border-end border-dark-subtle border-bottom border-dark-subtle"> 
-            <div class="row"><i style="color: #3367d1" class="fa-solid fa-book-open-reader xxl"></i></div> 
-            <div class="row"><h3 class="fw-bold text-center">Research Interests</h3></div>
-          </div>
-          <div class="col border-end border-dark-subtle">
-            <div class="row"><h3 class="fw-bold text-center border-bottom border-dark-subtle">Computer Vision</h3></div>
-            <div class="row"><h3 class="fw-bold text-center  border-bottom border-dark-subtle">Artificial Intelligence</h3></div>
-            <div class="row"><h3 class="fw-bold text-center  border-bottom border-dark-subtle">  Explainable AI (XAI) </h3></div>
-            <div class="row"><h3 class="fw-bold text-center border-bottom border-dark-subtle">  - </h3></div>
-          </div>
-          <div class="col">
-            <div class="row"><h3 class="fw-bold text-center border-bottom border-dark-subtle">Human Computer Interaction (HCI)</h3></div>
-            <div class="row"><h3 class="fw-bold text-center  border-bottom border-dark-subtle">-</h3></div>
-            <div class="row"><h3 class="fw-bold text-center  border-bottom border-dark-subtle">-</h3></div>
-            <!-- <div class="row"><h3 class="fw-bold text-center  border-bottom border-dark-subtle">-</h3></div> -->
-          </div>
-          
-        </div>
-
-      </div>
-    </section>
-  <br>
-    <section>
-      <div class="container text-center">
-
-        <div class="row border border-dark-subtle border-1"> 
-          <div class="col-md-3 pt-2 border-end border-dark-subtle border-bottom border-dark-subtle"> 
-            <div class="row"><i style="color: #3367d1" class="fa-solid fa-diagram-project xxl"></i></div> 
-            <div class="row"><h3 class="fw-bold text-center">Projects</h3></div>
-          </div>
-          <div class="col border-end border-dark-subtle">
-            <div class="row"><h3 class="texthov fw-bold text-center border-bottom border-dark-subtle"><a onclick="window.open('https://youtu.be/5OXy_iO83f8', '_blank')">
-              Deep Learning-Based Prediction of Football Players’ Performance During Penalty Shootout</a></h3></div>
-           
-          
-          
-        </div>
-
-      </div>
-    </section>
-<br>
-    <!-- section 2 Publications -->
-    <section>
-      <div class="container text-center">
-
-        <!-- Footer Section Start -->
-     <footer class="footer--section pt--100 pb--100 text-center">
-      <div class="container">
-          <!-- Copyright Text Start -->
-          <p class="copyright--text fs--16 ff--primary">Copyright&copy; 2025 <a href="https://shartaz.netlify.app/">Shartaz</a>. All Rights Reserved.</p>
-          <!-- Copyright Text End -->
-      </div>
-  </footer>
-
-      </div>
-    </section>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
-
-  </body>
+</body>
 </html>
