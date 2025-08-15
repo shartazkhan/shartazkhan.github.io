@@ -191,8 +191,27 @@
         </div>
 
     </main>
+ <!-- Footer Section -->
+    <footer class="container mx-auto mt-12 p-8 border-t-4 border-double border-black text-xs text-stone-600">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center text-center sm:text-left">
+            <p>&copy; <span id="footer-year"></span> Shartaz Khan Akash. All Rights Reserved.</p>
+            <p class="font-semibold tracking-widest sm:text-center">DHAKA, BANGLADESH</p>
+            <p id="footer-date" class="sm:text-right"></p>
+        </div>
+    </footer>
 
+    <script>
+        // Dynamically set the date and year in the footer
+        const yearElement = document.getElementById('footer-year');
+        const dateElement = document.getElementById('footer-date');
+        const today = new Date();
+        const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+        
+        yearElement.textContent = today.getFullYear();
+        dateElement.textContent = today.toLocaleDateString('en-US', dateOptions);
+    </script>
 </body>
 </html>
+
 
 
