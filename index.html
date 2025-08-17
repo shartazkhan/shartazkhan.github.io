@@ -9,7 +9,7 @@
     <!-- Google Fonts: Playfair Display & Lora -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
@@ -47,6 +47,25 @@
         .section-title::after {
             right: 25%;
         }
+        .research-card, .certificate-img {
+            transition: all 0.3s ease;
+        }
+        .research-card:hover {
+            background-color: #ffffff;
+            border-color: #2a2a2a;
+        }
+        .photo-caption {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
+        /* Testimonial Carousel Styles */
+        .testimonial-quote {
+            font-family: 'Lora', serif;
+            font-style: italic;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #44403c; /* stone-700 */
+        }
     </style>
 </head>
 <body class="text-stone-800">
@@ -74,6 +93,9 @@
                     <p class="text-stone-600 mt-2 text-sm leading-relaxed">
                         A Computer Engineer with a focus on machine learning and computer vision. My goal is to leverage my technical background to contribute to innovative research in artificial intelligence.
                     </p>
+                    <a href="src/Shartaz_Akash_CV.pdf" download class="inline-block bg-stone-800 text-white px-4 py-2 rounded-full hover:bg-stone-600 transition-colors mt-4 text-xs font-semibold">
+                            <i class="fa-solid fa-file-arrow-down mr-2"></i>Download CV
+                    </a>
                 </div>
                 <hr class="border-stone-300">
                 <div>
@@ -94,14 +116,15 @@
                         <a href="https://www.behance.net/shartaz" target="_blank" class="flex items-center gap-3 text-stone-700 hover:text-black transition-colors">
                             <i class="fa-brands fa-behance w-4 text-center"></i><span>Behance</span>
                         </a>
+                        
                     </div>
                 </div>
                 <hr class="border-stone-300">
                  <div>
                     <h4 class="section-title"><span>Accolades</span></h4>
                     <ul class="list-none space-y-2 text-sm text-stone-700">
-                        <li><span class="font-semibold">Vice-Chancellor's Award</span><br>American International University-Bangladesh</li>
-                        <li><span class="font-semibold">Dean's Award</span><br>American International University-Bangladesh</li>
+                        <li><span class="font-semibold">Vice-Chancellor's Award</span><br>For Best Final Year Project/Thesis</li>
+                        <li><span class="font-semibold">Dean's Award</span><br>For Best Final Year Project/Thesis</li>
                     </ul>
                 </div>
             </aside>
@@ -111,26 +134,27 @@
                 <div>
                     <h2 class="headline text-4xl font-bold border-b-2 border-black pb-2 mb-4">Research Interests</h2>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-                        <div class="p-4 bg-[#EAE8E3] border border-stone-300">
+                        <div class="p-4 bg-[#EAE8E3] border border-stone-300 research-card">
                             <h4 class="font-bold text-lg">Generative AI & LLMs</h4>
                             <p class="text-stone-600">Exploring architecture and fine-tuning of Large Language Models and diffusion models.</p>
                         </div>
-                        <div class="p-4 bg-[#EAE8E3] border border-stone-300">
+                        <div class="p-4 bg-[#EAE8E3] border border-stone-300 research-card">
                             <h4 class="font-bold text-lg">Explainable AI (XAI)</h4>
                             <p class="text-stone-600">Developing interpretable models to understand and trust complex AI systems.</p>
                         </div>
-                        <div class="p-4 bg-[#EAE8E3] border border-stone-300">
+                        <div class="p-4 bg-[#EAE8E3] border border-stone-300 research-card">
                             <h4 class="font-bold text-lg">Multimodal Learning</h4>
                             <p class="text-stone-600">Fusing diverse data modalities like text, images, and sensor data for context-aware AI.</p>
                         </div>
-                         <div class="p-4 bg-[#EAE8E3] border border-stone-300">
+                         <div class="p-4 bg-[#EAE8E3] border border-stone-300 research-card">
                             <h4 class="font-bold text-lg">AI for Scientific Discovery</h4>
                             <p class="text-stone-600">Leveraging ML to accelerate research in fields like materials science and drug discovery.</p>
                         </div>
                     </div>
                 </div>
                  <hr class="border-stone-300">
-                <div>
+                
+                 <div>
                     <h2 class="headline text-4xl font-bold border-b-2 border-black pb-2 mb-4">Publications</h2>
                     <div class="space-y-6 text-sm">
                         <div>
@@ -143,6 +167,66 @@
                             <p class="text-stone-600 mt-1">Created a system using YOLOv4, OpenCV, and pose estimation to predict goalpost targets during penalty shootouts by training an LSTM model on over 200,000 pose landmarks.</p>
                             <p class="text-stone-600"><span class="italic">ICCIT 2023.</span> <a href="https://ieeexplore.ieee.org/document/10441247" target="_blank" class="font-semibold text-stone-800 hover:underline">View Publication &rarr;</a></p>
                         </div>
+                    </div>
+                </div>
+                <hr class="border-stone-300">
+                    <div>
+                    <h2 class="headline text-4xl font-bold border-b-2 border-black pb-2 mb-4">Projects</h2>
+                    <div class="space-y-6 text-sm">
+                         <div>
+                            <h4 class="font-bold text-lg">Deep Learning for Football Penalty Prediction</h4>
+                            <p class="text-stone-600 mt-1"><strong>Problem:</strong> Developed a system to predict the goalpost region targeted by players during penalty shootouts, addressing a complex challenge in sports analytics.</p>
+                            <p class="text-stone-600 mt-1"><strong>Methodology:</strong> Utilized YOLOv4 for player detection, OpenCV for image processing, and pose estimation to extract key body landmarks. Trained an LSTM model on over 200,000 pose landmarks to predict kicker actions.</p>
+                            <p class="text-stone-600"><span class="italic">This was my award-winning final year project.</span> <a href="#" class="font-semibold text-stone-800 hover:underline">View Code &rarr;</a></p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-stone-300">
+                <div>
+                    <h2 class="headline text-4xl font-bold border-b-2 border-black pb-2 mb-4">Testimonials</h2>
+                    <div id="testimonial-carousel" class="relative w-full h-48 overflow-hidden">
+                        <div id="testimonial-slider" class="absolute top-0 left-0 h-full w-full flex transition-transform duration-700 ease-in-out">
+                            <div class="w-full flex-shrink-0 h-full flex items-center justify-center p-4">
+                                <blockquote>
+                                    <p class="testimonial-quote text-center">"He is a multi-talented student poised to contribute to any research problem he takes on significantly. I wholeheartedly recommend him."</p>
+                                    <footer class="text-sm mt-2 text-stone-600 text-center">- Dr. Md. Saniat Rahman Zishan, Director, Faculty of Engineering, AIUB</footer>
+                                </blockquote>
+                            </div>
+                            <div class="w-full flex-shrink-0 h-full flex items-center justify-center p-4">
+                                <blockquote>
+                                    <p class="testimonial-quote text-center">"He represents the caliber of students who do not just absorb knowledge but actively transform intellectual landscapes. Any institution would be extraordinarily fortunate to have him."</p>
+                                    <footer class="text-sm mt-2 text-stone-600 text-center">- Dr. M. Tanseer Ali, Associate Professor, AIUB</footer>
+                                </blockquote>
+                            </div>
+                            <div class="w-full flex-shrink-0 h-full flex items-center justify-center p-4">
+                                <blockquote>
+                                    <p class="testimonial-quote text-center">"I am confident he will consistently demonstrate unwavering commitment and diligence in all his endeavors. I extend my best wishes to him for his future pursuits."</p>
+                                    <footer class="text-sm mt-2 text-stone-600 text-center">- Chowdhury Akram Hossain, Head, Dept. of Computer Engineering, AIUB</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-stone-300">
+                <div>
+                    <h2 class="headline text-4xl font-bold border-b-2 border-black pb-2 mb-4">Gallery</h2>
+                    <div class="grid grid-cols-2 gap-4">
+                        <figure>
+                            <img src="src/Convo_award01.jpg" 
+                                 alt="A special moment 1" 
+                                 class="object-cover w-full border-2 border-black p-1 shadow-sm">
+                            <figcaption class="text-center text-sm text-stone-600 mt-2 photo-caption">
+                                Receiving the Vice-Chancellor's Award.
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/award02.JPG" 
+                                 alt="A special moment 2" 
+                                 class="object-cover w-full border-2 border-black p-1 shadow-sm">
+                            <figcaption class="text-center text-sm text-stone-600 mt-2 photo-caption">
+                                Receiving the Deans's Award.
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
             </section>
@@ -166,6 +250,26 @@
                         </div>
                     </div>
                 </div>
+                 <hr class="border-stone-300">
+                <div>
+                    <h4 class="section-title"><span>Internship Experience</span></h4>
+                    <div class="space-y-4 text-sm">
+                        <div>
+                            <p class="font-semibold">Research and Development Intern</p>
+                            <p class="text-stone-600">Faculty of Engineering, AIUB (May 2022 - Jul 2022)</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-stone-300">
+                <div>
+                    <h4 class="section-title"><span>Startup Experience</span></h4>
+                    <div class="space-y-4 text-sm">
+                        <div>
+                            <p class="font-semibold">IT & Graphic Designer</p>
+                            <p class="text-stone-600">Semiotfy (Dec 2021 - Jan 2024)</p>
+                        </div>
+                    </div>
+                </div>
                 <hr class="border-stone-300">
                 <div>
                     <h4 class="section-title"><span>Technical Skills</span></h4>
@@ -184,23 +288,90 @@
                 <div>
                     <h4 class="section-title"><span>Education</span></h4>
                      <p class="font-semibold text-sm">B.Sc. in Computer Engineering</p>
-                     <p class="text-stone-600 text-sm">American International University-Bangladesh</p>
+                     <a href="https://www.aiub.edu/" target="_blank" class="text-stone-600 text-sm hover:underline">American International University-Bangladesh</a>
+                </div>
+                <hr class="border-stone-300">
+                <div>
+                    <h4 class="section-title"><span>Certifications</span></h4>
+                    <ul class="list-none space-y-2 text-sm text-stone-700">
+                        <li><a href="#" class="hover:underline"><span class="font-semibold">Technical Support Fundamentals</span><br>Coursera</a></li>
+                        <li><a href="#" class="hover:underline"><span class="font-semibold">Crash Course on Python</span><br>Coursera</a></li>
+                        <li><a href="#" class="hover:underline"><span class="font-semibold">Introduction to Git and GitHub</span><br>Coursera</a></li>
+                    </ul>
                 </div>
             </aside>
 
         </div>
 
     </main>
- <!-- Footer Section -->
+    <!-- Footer Section -->
     <footer class="container mx-auto mt-12 p-8 border-t-4 border-double border-black text-xs text-stone-600">
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center text-center sm:text-left">
+        <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 items-center text-center sm:text-left">
             <p>&copy; <span id="footer-year"></span> Shartaz Khan Akash. All Rights Reserved.</p>
             <p class="font-semibold tracking-widest sm:text-center">DHAKA, BANGLADESH</p>
             <p id="footer-date" class="sm:text-right"></p>
+            <p class="sm:text-right font-semibold">Visitors: <span id="visitor-count">...</span></p>
         </div>
     </footer>
+    
+    <!-- Firebase SDK -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getFirestore, doc, getDoc, setDoc, increment, onSnapshot, runTransaction } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-    <script>
+        // Your web app's Firebase configuration
+        // IMPORTANT: Replace this with your own Firebase project configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBWbizlGnB3sNo9zv3_zvSIxUEAXWp0pnw",
+            authDomain: "test-caa05.firebaseapp.com",
+            projectId: "test-caa05",
+            storageBucket: "test-caa05.firebasestorage.app",
+            messagingSenderId: "519412359142",
+            appId: "1:519412359142:web:f03bda407fb0710f1c4027"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        // Visitor Counter Logic
+        const visitorCountElement = document.getElementById('visitor-count');
+        const counterRef = doc(db, "visitors", "site-counter");
+
+        // Listen for real-time updates to the counter
+        onSnapshot(counterRef, (doc) => {
+            if (doc.exists()) {
+                visitorCountElement.textContent = doc.data().count;
+            } else {
+                visitorCountElement.textContent = '0';
+            }
+        });
+
+        // Function to increment the counter
+        async function incrementCounter() {
+            // Use a session storage item to prevent incrementing on every page refresh
+            if (!sessionStorage.getItem('visitorCounted')) {
+                try {
+                    await runTransaction(db, async (transaction) => {
+                        const counterDoc = await transaction.get(counterRef);
+                        if (!counterDoc.exists()) {
+                            transaction.set(counterRef, { count: 1 });
+                        } else {
+                            const newCount = counterDoc.data().count + 1;
+                            transaction.update(counterRef, { count: newCount });
+                        }
+                    });
+                    sessionStorage.setItem('visitorCounted', 'true');
+                } catch (e) {
+                    console.error("Transaction failed: ", e);
+                }
+            }
+        }
+
+        // Call the function when the page loads
+        document.addEventListener('DOMContentLoaded', incrementCounter);
+
         // Dynamically set the date and year in the footer
         const yearElement = document.getElementById('footer-year');
         const dateElement = document.getElementById('footer-date');
@@ -209,9 +380,16 @@
         
         yearElement.textContent = today.getFullYear();
         dateElement.textContent = today.toLocaleDateString('en-US', dateOptions);
+
+        // Testimonial Carousel Logic
+        const slider = document.getElementById('testimonial-slider');
+        const slides = slider.children.length;
+        let currentIndex = 0;
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % slides;
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }, 5000); // Change slide every 5 seconds
     </script>
 </body>
 </html>
-
-
-
