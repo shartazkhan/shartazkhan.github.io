@@ -6,67 +6,14 @@
     <title>Shartaz Khan Akash - Personal Portfolio</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Playfair Display & Lora -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        /* Custom styles for the old newspaper theme */
-        body {
-            font-family: 'Lora', serif;
-            background-color: #F5F3EF; /* An aged paper color */
-            color: #2a2a2a;
-        }
-        h1, h2, h3, h4, h5, h6, .headline {
-            font-family: 'Playfair Display', serif;
-        }
-        .section-title {
-            font-family: 'Lora', serif;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            font-size: 0.875rem;
-            color: #575757;
-            text-align: center;
-            margin-bottom: 1rem;
-            position: relative;
-        }
-        .section-title::before, .section-title::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            width: 3rem;
-            height: 1px;
-            background-color: #d1d1d1;
-        }
-        .section-title::before {
-            left: 25%;
-        }
-        .section-title::after {
-            right: 25%;
-        }
-        .research-card, .certificate-img {
-            transition: all 0.3s ease;
-        }
-        .research-card:hover {
-            background-color: #ffffff;
-            border-color: #2a2a2a;
-        }
-        .photo-caption {
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
-        }
-        /* Testimonial Carousel Styles */
-        .testimonial-quote {
-            font-family: 'Lora', serif;
-            font-style: italic;
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: #44403c; /* stone-700 */
-        }
-    </style>
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="text-stone-800">
 
@@ -93,9 +40,9 @@
                     <p class="text-stone-600 mt-2 text-sm leading-relaxed">
                         A Computer Engineer with a focus on machine learning and computer vision. My goal is to leverage my technical background to contribute to innovative research in artificial intelligence.
                     </p>
-                    <a href="src/Shartaz_Akash_CV.pdf" download class="inline-block bg-stone-800 text-white px-4 py-2 rounded-full hover:bg-stone-600 transition-colors mt-4 text-xs font-semibold">
+                     <a href="src/Shartaz_Akash_CV.pdf" download class="inline-block bg-stone-800 text-white px-4 py-2 rounded-full hover:bg-stone-600 transition-colors mt-4 text-xs font-semibold">
                             <i class="fa-solid fa-file-arrow-down mr-2"></i>Download CV
-                    </a>
+                        </a>
                 </div>
                 <hr class="border-stone-300">
                 <div>
@@ -116,7 +63,6 @@
                         <a href="https://www.behance.net/shartaz" target="_blank" class="flex items-center gap-3 text-stone-700 hover:text-black transition-colors">
                             <i class="fa-brands fa-behance w-4 text-center"></i><span>Behance</span>
                         </a>
-                        
                     </div>
                 </div>
                 <hr class="border-stone-300">
@@ -129,8 +75,9 @@
                 </div>
             </aside>
 
-            <!-- Center Column: Research & Publications -->
+            <!-- Center Column: Main Content -->
             <section class="lg:col-span-2 space-y-8">
+                <!-- Research Interests -->
                 <div>
                     <h2 class="headline text-4xl font-bold border-b-2 border-black pb-2 mb-4">Research Interests</h2>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
@@ -152,9 +99,9 @@
                         </div>
                     </div>
                 </div>
-                 <hr class="border-stone-300">
-                
-                 <div>
+                <hr class="border-stone-300">
+                <!-- Publications -->
+                <div>
                     <h2 class="headline text-4xl font-bold border-b-2 border-black pb-2 mb-4">Publications</h2>
                     <div class="space-y-6 text-sm">
                         <div>
@@ -170,7 +117,8 @@
                     </div>
                 </div>
                 <hr class="border-stone-300">
-                    <div>
+                <!-- Projects -->
+                <div>
                     <h2 class="headline text-4xl font-bold border-b-2 border-black pb-2 mb-4">Projects</h2>
                     <div class="space-y-6 text-sm">
                          <div>
@@ -182,6 +130,7 @@
                     </div>
                 </div>
                 <hr class="border-stone-300">
+                <!-- Testimonials -->
                 <div>
                     <h2 class="headline text-4xl font-bold border-b-2 border-black pb-2 mb-4">Testimonials</h2>
                     <div id="testimonial-carousel" class="relative w-full h-48 overflow-hidden">
@@ -208,6 +157,7 @@
                     </div>
                 </div>
                 <hr class="border-stone-300">
+                <!-- Gallery -->
                 <div>
                     <h2 class="headline text-4xl font-bold border-b-2 border-black pb-2 mb-4">Gallery</h2>
                     <div class="grid grid-cols-2 gap-4">
@@ -233,6 +183,7 @@
 
             <!-- Right Column: Experience & Skills -->
             <aside class="lg:col-span-1 space-y-8 border-l border-stone-300 pl-8">
+                <!-- Experience -->
                 <div>
                     <h4 class="section-title"><span>Experience</span></h4>
                     <div class="space-y-4 text-sm">
@@ -250,7 +201,8 @@
                         </div>
                     </div>
                 </div>
-                 <hr class="border-stone-300">
+                <hr class="border-stone-300">
+                <!-- Internship -->
                 <div>
                     <h4 class="section-title"><span>Internship Experience</span></h4>
                     <div class="space-y-4 text-sm">
@@ -261,6 +213,7 @@
                     </div>
                 </div>
                 <hr class="border-stone-300">
+                <!-- Startup -->
                 <div>
                     <h4 class="section-title"><span>Startup Experience</span></h4>
                     <div class="space-y-4 text-sm">
@@ -271,6 +224,22 @@
                     </div>
                 </div>
                 <hr class="border-stone-300">
+                <!-- Volunteering -->
+                <div>
+                    <h4 class="section-title"><span>Volunteering Experience</span></h4>
+                    <div class="space-y-4 text-sm">
+                        <div>
+                            <p class="font-semibold">Vice Chairperson</p>
+                            <p class="text-stone-600">IEEE AIUB Student Branch</p>
+                        </div>
+                         <div>
+                            <p class="font-semibold">Regional Volunteer</p>
+                            <p class="text-stone-600">IEEE Region 10 Student Activity Committee</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-stone-300">
+                <!-- Skills -->
                 <div>
                     <h4 class="section-title"><span>Technical Skills</span></h4>
                     <div class="flex flex-wrap gap-2 text-xs">
@@ -285,12 +254,14 @@
                     </div>
                 </div>
                  <hr class="border-stone-300">
+                <!-- Education -->
                 <div>
                     <h4 class="section-title"><span>Education</span></h4>
                      <p class="font-semibold text-sm">B.Sc. in Computer Engineering</p>
                      <a href="https://www.aiub.edu/" target="_blank" class="text-stone-600 text-sm hover:underline">American International University-Bangladesh</a>
                 </div>
                 <hr class="border-stone-300">
+                <!-- Certifications -->
                 <div>
                     <h4 class="section-title"><span>Certifications</span></h4>
                     <ul class="list-none space-y-2 text-sm text-stone-700">
@@ -306,90 +277,14 @@
     </main>
     <!-- Footer Section -->
     <footer class="container mx-auto mt-12 p-8 border-t-4 border-double border-black text-xs text-stone-600">
-        <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 items-center text-center sm:text-left">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center text-center sm:text-left">
             <p>&copy; <span id="footer-year"></span> Shartaz Khan Akash. All Rights Reserved.</p>
             <p class="font-semibold tracking-widest sm:text-center">DHAKA, BANGLADESH</p>
-            <p id="footer-date" class="sm:text-right"></p>
-            <p class="sm:text-right font-semibold">Visitors: <span id="visitor-count">...</span></p>
+            <p class="sm:text-right">Last Updated: <span id="footer-date"></span></p>
         </div>
     </footer>
     
-    <!-- Firebase SDK -->
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-        import { getFirestore, doc, getDoc, setDoc, increment, onSnapshot, runTransaction } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-
-        // Your web app's Firebase configuration
-        // IMPORTANT: Replace this with your own Firebase project configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyBWbizlGnB3sNo9zv3_zvSIxUEAXWp0pnw",
-            authDomain: "test-caa05.firebaseapp.com",
-            projectId: "test-caa05",
-            storageBucket: "test-caa05.firebasestorage.app",
-            messagingSenderId: "519412359142",
-            appId: "1:519412359142:web:f03bda407fb0710f1c4027"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const db = getFirestore(app);
-
-        // Visitor Counter Logic
-        const visitorCountElement = document.getElementById('visitor-count');
-        const counterRef = doc(db, "visitors", "site-counter");
-
-        // Listen for real-time updates to the counter
-        onSnapshot(counterRef, (doc) => {
-            if (doc.exists()) {
-                visitorCountElement.textContent = doc.data().count;
-            } else {
-                visitorCountElement.textContent = '0';
-            }
-        });
-
-        // Function to increment the counter
-        async function incrementCounter() {
-            // Use a session storage item to prevent incrementing on every page refresh
-            if (!sessionStorage.getItem('visitorCounted')) {
-                try {
-                    await runTransaction(db, async (transaction) => {
-                        const counterDoc = await transaction.get(counterRef);
-                        if (!counterDoc.exists()) {
-                            transaction.set(counterRef, { count: 1 });
-                        } else {
-                            const newCount = counterDoc.data().count + 1;
-                            transaction.update(counterRef, { count: newCount });
-                        }
-                    });
-                    sessionStorage.setItem('visitorCounted', 'true');
-                } catch (e) {
-                    console.error("Transaction failed: ", e);
-                }
-            }
-        }
-
-        // Call the function when the page loads
-        document.addEventListener('DOMContentLoaded', incrementCounter);
-
-        // Dynamically set the date and year in the footer
-        const yearElement = document.getElementById('footer-year');
-        const dateElement = document.getElementById('footer-date');
-        const today = new Date();
-        const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
-        
-        yearElement.textContent = today.getFullYear();
-        dateElement.textContent = today.toLocaleDateString('en-US', dateOptions);
-
-        // Testimonial Carousel Logic
-        const slider = document.getElementById('testimonial-slider');
-        const slides = slider.children.length;
-        let currentIndex = 0;
-
-        setInterval(() => {
-            currentIndex = (currentIndex + 1) % slides;
-            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }, 5000); // Change slide every 5 seconds
-    </script>
+    <!-- Custom Script -->
+    <script src="/js/script.js" defer></script>
 </body>
 </html>
