@@ -1,0 +1,53 @@
+/* Custom styles for the old newspaper theme */
+body {
+    font-family: 'Lora', serif;
+    background-color: #F5F3EF; /* An aged paper color */
+    color: #2a2a2a;
+}
+h1, h2, h3, h4, h5, h6, .headline {
+    font-family: 'Playfair Display', serif;
+}
+.section-title {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.875rem;
+    color: #575757;
+    text-align: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.section-title::before, .section-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 3rem;
+    height: 1px;
+    background-color: #d1d1d1;
+}
+.section-title::before {
+    left: 25%;
+}
+.section-title::after {
+    right: 25%;
+}
+.research-card, .certificate-img {
+    transition: all 0.3s ease;
+}
+.research-card:hover {
+    background-color: #ffffff;
+    border-color: #2a2a2a;
+}
+.photo-caption {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+/* Testimonial Carousel Styles */
+.testimonial-quote {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #44403c; /* stone-700 */
+}
